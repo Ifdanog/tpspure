@@ -92,7 +92,6 @@ document.addEventListener("DOMContentLoaded", function () {
         .footer {
             background: #f8f8f8;
             padding: 30px 10%;
-            font-family: Poppins, sans-serif;
             color: #333;
         }
 
