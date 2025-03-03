@@ -91,6 +91,7 @@ document.addEventListener("DOMContentLoaded", function () {
     style.innerHTML = `
         .footer {
             background: #f8f8f8;
+            font-family: "Lato", sans-serif;
             padding: 30px 10%;
             color: #333;
         }
