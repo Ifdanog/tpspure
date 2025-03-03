@@ -91,8 +91,8 @@ document.addEventListener("DOMContentLoaded", function () {
     style.innerHTML = `
         .footer {
             background: #f8f8f8;
-            font-family: var(--global-body-font-family-stack);
             padding: 30px 10%;
+            font-family: Arial, sans-serif;
             color: #333;
         }
 
