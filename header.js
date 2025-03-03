@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", function () {
     // Create a new header container
     const header = document.createElement("div");
-    header.classList.add("ins-header__row");
+    header.classList.add("ins-header__ro");
 
     // Set inner HTML for navigation
     header.innerHTML = `
