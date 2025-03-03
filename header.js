@@ -33,7 +33,7 @@ document.addEventListener("DOMContentLoaded", function () {
             </nav>
         </div>
     `;
-
+console.log("Hello");
     // Replace the existing header
     const existingHeader = document.querySelector("header");
     if (existingHeader) {
