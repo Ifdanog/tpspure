@@ -113,7 +113,7 @@ hamburgerMenu.onclick = () => {
             cursor: pointer;
         }
         .bar {
-            border: 0.5px solid #000;
+            border: 1px solid #000;
             margin: 5px;
             width: 30px;
         }
