@@ -104,6 +104,7 @@ document.addEventListener("DOMContentLoaded", function () {
     style.innerHTML = `
         .footer {
             background: #f8f8f8;
+            border-top: 1px solid #ccc;
             padding: 30px 10%;
             font-family: var(--description-font-family),-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Arial,sans-serif;
             color: #333;
