@@ -146,12 +146,13 @@ document.addEventListener("DOMContentLoaded", function () {
         }
 
         .subscribe-button {
-            background: #0056b3;
-            color: white;
+            background: transparent;
+            color: #004add;
             padding: 10px 15px;
-            border: none;
+            border: 1px solid #004add;
+            border-radius: 10px;
             cursor: pointer;
-            margin-top: 10px;
+            margin: 10px 0;
         }
 
         .subscribe-button:hover {
