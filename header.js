@@ -2,10 +2,13 @@ document.addEventListener("DOMContentLoaded", function () {
     // Create the new header structure
     const newHeader = document.createElement("header");
     newHeader.classList.add("custom-header");
-    newHeader.innerHTML = `
+        newHeader.innerHTML = `
         <div class="header-container">
-        <p></p>
-            <div class="logo">
+        <div class="hamburger-menu">
+            <div class="bar"></div>
+            <div class="bar half"></div>
+        </div>
+        <div class="logo">
                 <a href="/">
                     <img src="https://d2gt4h1eeousrn.cloudfront.net/110609312/header-fcHJMd/WCga6pX-200x200.jpg" alt="Logo">
                 </a>
@@ -33,13 +36,38 @@ document.addEventListener("DOMContentLoaded", function () {
             </nav>
         </div>
     `;
-console.log("Hello");
+
     // Replace the existing header
     const existingHeader = document.querySelector("header");
     if (existingHeader) {
         existingHeader.replaceWith(newHeader);
+        const hamburgerMenu = document.querySelector(".hamburger-menu");
+        hamburgerMenu.onclick = () => console.log("hoi");
     } else {
         document.body.appendChild(newHeader);
+        const hamburgerMenu = document.querySelector(".hamburger-menu");
+        hamburgerMenu.onclick = () => {
+            // Check if the nav element already exists
+            let nav = document.getElementById("nav-menu");
+            
+            if (!nav) {
+                // Create the nav element
+                nav = document.createElement("nav");
+                nav.id = "nav-menu";
+                nav.innerHTML = `
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                `;
+                document.body.appendChild(nav);
+            } else {
+                // Toggle visibility of the nav
+                nav.style.display = nav.style.display === "none" ? "block" : "none";
+            }
+        };
     }
 
     // Apply styles dynamically
@@ -51,7 +79,7 @@ console.log("Hello");
             align-items: center;
             justify-content: space-between;
             color: black;
-            font-family: Lato, san-serif;
+            font-family: var(--description-font-family),-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Arial,sans-serif;
         }
         .header-container {
             display: grid;
@@ -60,9 +88,23 @@ console.log("Hello");
             justify-content: center;
             align-items: center;
         }
+        .hamburger-menu {
+            display: none;
+            cursor: pointer;
+        }
+        .bar {
+            border: 0.5px solid #000;
+            margin: 5px;
+            width: 30px;
+        }
+        .half {
+            width: 15px;
+        }
         .icon {
             position: absolute;
             right: 40px;
+            display: flex;
+            gap: 10px;
         }
         .logo{
             margin: 0 auto;
@@ -71,6 +113,26 @@ console.log("Hello");
             height: 50px;
             margin: 0 auto;
         }
+        #nav-menu {
+            position: absolute;
+            top: 84px;
+            left: 0;
+            height: 100%;
+            background-color: white;
+            color: black;
+            width: 100%;
+            display: none;
+        }
+        #nav-menu ul {
+            list-style-type: none;
+        }
+        #nav-menu ul li {
+            padding: 20px 0;
+        }  
+        #nav-menu ul li a {
+            text-decoration: none;
+            font-size: 20px;
+        }  
         .nav-menu {
             display: flex;
             align-items: center;
@@ -108,6 +170,19 @@ console.log("Hello");
         }
         .dropdown:hover .dropdown-menu {
             display: block;
+        }
+        @media (max-width: 900px) {
+            .hamburger-menu {
+                display: block;
+                width: 30px;
+                cursor: pointer;
+            }
+                .nav-menu {
+                display: none;
+                }
+#nav-menu {
+                display: block;
+                }
         }
     `;
     document.head.appendChild(style);

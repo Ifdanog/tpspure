@@ -157,7 +157,8 @@ document.addEventListener("DOMContentLoaded", function () {
         }
 
         .subscribe-button:hover {
-            background: #004494;
+            background: #004add;
+            color: white;
         }
 
         .social-icons a svg {
