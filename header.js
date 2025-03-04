@@ -42,8 +42,28 @@ document.addEventListener("DOMContentLoaded", function () {
     if (existingHeader) {
         existingHeader.replaceWith(newHeader);
         const hamburgerMenu = document.querySelector(".hamburger-menu");
-        hamburgerMenu.onclick = () => console.log("hoi");
-    } else {
+hamburgerMenu.onclick = () => {
+            // Check if the nav element already exists
+            let nav = document.getElementById("nav-menu");
+            
+            if (!nav) {
+                // Create the nav element
+                nav = document.createElement("nav");
+                nav.id = "nav-menu";
+                nav.innerHTML = `
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                `;
+                document.body.appendChild(nav);
+            } else {
+                // Toggle visibility of the nav
+                nav.style.display = nav.style.display === "none" ? "block" : "none";
+            }
+        };    } else {
         document.body.appendChild(newHeader);
         const hamburgerMenu = document.querySelector(".hamburger-menu");
         hamburgerMenu.onclick = () => {
