@@ -42,7 +42,7 @@ document.addEventListener("DOMContentLoaded", function () {
     if (existingHeader) {
         existingHeader.replaceWith(newHeader);
         const hamburgerMenu = document.querySelector(".hamburger-menu");
-hamburgerMenu.onclick = () => {
+        hamburgerMenu.onclick = () => {
             // Check if the nav element already exists
             let nav = document.getElementById("nav-menu");
             
@@ -63,7 +63,8 @@ hamburgerMenu.onclick = () => {
                 // Toggle visibility of the nav
                 nav.style.display = nav.style.display === "none" ? "block" : "none";
             }
-        };    } else {
+        };
+        } else {
         document.body.appendChild(newHeader);
         const hamburgerMenu = document.querySelector(".hamburger-menu");
         hamburgerMenu.onclick = () => {
