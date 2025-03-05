@@ -168,6 +168,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
         .payment-methods, .social-icons {
             display: flex;
+            flex-wrap: wrap;
             align-items: center;
             gap: 10px;
         }
