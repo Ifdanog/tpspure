@@ -39,60 +39,42 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // Replace the existing header
     const existingHeader = document.querySelector("header");
+
     if (existingHeader) {
         existingHeader.replaceWith(newHeader);
-        const hamburgerMenu = document.querySelector(".hamburger-menu");
-        hamburgerMenu.onclick = () => {
-            document.body.style.overflow = "hidden";
-            // Check if the nav element already exists
-            let nav = document.getElementById("nav-menu");
-            
-            if (!nav) {
-                // Create the nav element
-                nav = document.createElement("nav");
-                nav.id = "nav-menu";
-                nav.innerHTML = `
-                    <ul>
-                        <li><a href="#home">Home</a></li>
-                        <li><a href="#about">About</a></li>
-                        <li><a href="#services">Services</a></li>
-                        <li><a href="#contact">Contact</a></li>
-                    </ul>
-                `;
-                document.body.appendChild(nav);
-            } else {
-                // Toggle visibility of the nav
-                nav.style.display = nav.style.display === "none" ? "block" : "none";
-            }
-        };
-        } else {
+    } else {
         document.body.appendChild(newHeader);
-        const hamburgerMenu = document.querySelector(".hamburger-menu");
-        hamburgerMenu.onclick = () => {
-            // Check if the nav element already exists
-            document.body.style.overflow = "hidden";
-            let nav = document.getElementById("nav-menu");
-            
-            if (!nav) {
-                // Create the nav element
-                nav = document.createElement("nav");
-                nav.id = "nav-menu";
-                nav.innerHTML = `
-                    <ul>
-                        <li><a href="#home">Home</a></li>
-                        <li><a href="#about">About</a></li>
-                        <li><a href="#services">Services</a></li>
-                        <li><a href="#contact">Contact</a></li>
-                    </ul>
-                `;
-                document.body.appendChild(nav);
-            } else {
-                // Toggle visibility of the nav
-                nav.style.display = nav.style.display === "none" ? "block" : "none";
-            }
-        };
     }
-
+    
+    const hamburgerMenu = document.querySelector(".hamburger-menu");
+    
+    hamburgerMenu.onclick = () => {
+        let nav = document.getElementById("nav-menu");
+    
+        if (!nav) {
+            // Create the nav element
+            nav = document.createElement("nav");
+            nav.id = "nav-menu";
+            nav.innerHTML = `
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            `;
+            document.body.appendChild(nav);
+            document.body.style.overflow = "hidden"; // Disable scrolling when menu opens
+        } else {
+            // Toggle visibility of the nav
+            const isHidden = nav.style.display === "none" || !nav.style.display;
+            nav.style.display = isHidden ? "block" : "none";
+    
+            // Enable or disable scrolling based on menu visibility
+            document.body.style.overflow = isHidden ? "hidden" : "auto";
+        }
+    };
+    
     // Apply styles dynamically
     const style = document.createElement("style");
     style.textContent = `
