@@ -202,7 +202,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 align-items: center;
             }
             .footer-section {
-                width: 90%;
+                width: 100%;
                 text-align: center;
                 border-bottom: 1px solid #ccc;
             }
