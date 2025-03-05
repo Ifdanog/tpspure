@@ -190,7 +190,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 }
 #nav-menu {
                 display: block;
-                            top: 140px;
+                            top: 130px;
                 }
         }
     `;
