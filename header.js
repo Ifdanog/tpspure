@@ -178,6 +178,7 @@ document.addEventListener("DOMContentLoaded", function () {
             width: 100%;
             display: none;
             z-index: 9999;
+            animation: fadeIn 0.3s ease-in-out;
         }
         #nav-menu ul {
             list-style-type: none;
