@@ -105,10 +105,11 @@ document.addEventListener("DOMContentLoaded", function () {
             display: grid;
             grid-template-columns: repeat(4,1fr);
             justify-content: space-between;
+            gap: 10px;
         }
 
         .footer-section {
-            width: 20%;
+            width: 100%;
             min-width: 200px;
             margin-bottom: 20px;
         }
@@ -197,7 +198,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 align-items: center;
             }
             .footer-section {
-                width: 90%;
+                width: 100%;
                 text-align: center;
                 border-bottom: 1px solid #ccc;
             }
