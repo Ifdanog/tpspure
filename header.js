@@ -11,7 +11,7 @@ document.addEventListener("DOMContentLoaded", function () {
         </div>
         <div class="logo">
                 <a href="/">
-                    <img src="https://d2gt4h1eeousrn.cloudfront.net/110609312/header-fcHJMd/WCga6pX-200x200.jpg" alt="Logo">
+                    <img src="https://d2gt4h1eeousrn.cloudfront.net/110609312/header-fcHJMd/gNvMcYc-600x600.webp" alt="Logo">
                 </a>
             </div>
             <div class="icon">
@@ -26,8 +26,8 @@ document.addEventListener("DOMContentLoaded", function () {
                     <a href="/product" class="dropdown-toggle">Shop ▾</a>
                     <div class="dropdown-menu">
                         <a href="/products/food-grade-talc">Food Grade Talcum Powder</a>
-                        <a href="/product/cosmetic">Pharmaceutical Grade Talcum Powder</a>
-                        <a href="/product/cosmetic">All Products</a>
+                        <a href="/products/pharmaceutical-grade-talc">Pharmaceutical Grade Talcum Powder</a>
+                        <a href="/product">All Products</a>
                     </div>
                 </div>
                 <a href="/services">Our Services</a>
