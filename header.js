@@ -1,8 +1,8 @@
 document.addEventListener("DOMContentLoaded", function () {
-    // Create the new header structure
-    const newHeader = document.createElement("header");
-    newHeader.classList.add("custom-header");
-        newHeader.innerHTML = `
+  // Create the new header structure
+  const newHeader = document.createElement("header");
+  newHeader.classList.add("custom-header");
+  newHeader.innerHTML = `
         <div class="header-container">
         <div class="hamburger-menu">
             <div class="bar"></div>
@@ -38,49 +38,60 @@ document.addEventListener("DOMContentLoaded", function () {
         </div>
     `;
 
-    // Replace the existing header
-    const existingHeader = document.querySelector("header");
+  // Replace the existing header
+  const existingHeader = document.querySelector("header");
 
-    if (existingHeader) {
-        existingHeader.replaceWith(newHeader);
-    } else {
-        document.body.appendChild(newHeader);
-    }
-    
-    const hamburgerMenu = document.querySelector(".hamburger-menu");
-    
-    hamburgerMenu.onclick = () => {
-        let nav = document.getElementById("nav-menu");
-    
-        if (!nav) {
-            // Create the nav element
-            nav = document.createElement("nav");
-            nav.id = "nav-menu";
-            nav.innerHTML = `
-                <ul>
-                    <li><a href="/">Home</a></li>
-                    <li><a href="/product">Shop</a></li>
-                    <li><a href="/about-us">About Us</a></li>
-                    <li><a href="#services">Our Services</a></li>
-                    <li><a href="#contact">Contact Us</a></li>
-                    <li><a href="/blogs">Blogs</a></li>
+  if (existingHeader) {
+    existingHeader.replaceWith(newHeader);
+  } else {
+    document.body.appendChild(newHeader);
+  }
+
+  const hamburgerMenu = document.querySelector(".hamburger-menu");
+
+  hamburgerMenu.onclick = () => {
+    let nav = document.getElementById("nav-menu");
+
+    if (!nav) {
+      nav = document.createElement("nav");
+      nav.id = "nav-menu";
+      nav.innerHTML = `
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li class="has-dropdown">
+                <a href="#" id="shop-link">Shop ▼</a>
+                <ul class="dropdown">
+                    <li><a href="/products/food-grade-talc">Food Grade Talcum Powder</a></li>
+                    <li><a href="/products/pharmaceutical-grade-talc">Pharmaceutical Grade Talcum Powder</a></li>
+                    <li><a href="/product">All Products</a></li>
                 </ul>
-            `;
-            document.body.appendChild(nav);
-            document.body.style.overflow = "hidden"; // Disable scrolling when menu opens
-        } else {
-            // Toggle visibility of the nav
-            const isHidden = nav.style.display === "none" || !nav.style.display;
-            nav.style.display = isHidden ? "block" : "none";
-    
-            // Enable or disable scrolling based on menu visibility
-            document.body.style.overflow = isHidden ? "hidden" : "auto";
-        }
-    };
-    
-    // Apply styles dynamically
-    const style = document.createElement("style");
-    style.textContent = `
+            </li>
+            <li><a href="/about-us">About Us</a></li>
+            <li><a href="#services">Our Services</a></li>
+            <li><a href="#contact">Contact Us</a></li>
+            <li><a href="/blogs">Blogs</a></li>
+        </ul>
+      `;
+      document.body.appendChild(nav);
+      document.body.style.overflow = "hidden";
+
+      // Add event listener for Shop dropdown
+      document.getElementById("shop-link").onclick = (event) => {
+        event.preventDefault();
+        const dropdown = event.target.nextElementSibling;
+        dropdown.style.display =
+          dropdown.style.display === "block" ? "none" : "block";
+      };
+    } else {
+      const isHidden = nav.style.display === "none" || !nav.style.display;
+      nav.style.display = isHidden ? "block" : "none";
+      document.body.style.overflow = isHidden ? "hidden" : "auto";
+    }
+  };
+
+  // Apply styles dynamically
+  const style = document.createElement("style");
+  style.textContent = `
         .custom-header {
             background: white;
             padding: 15px 20px;
@@ -193,5 +204,5 @@ document.addEventListener("DOMContentLoaded", function () {
             }
         }
     `;
-    document.head.appendChild(style);
+  document.head.appendChild(style);
 });

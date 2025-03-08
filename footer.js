@@ -1,8 +1,8 @@
 document.addEventListener("DOMContentLoaded", function () {
-    // Create footer element
-    const footer = document.createElement("footer");
-    footer.classList.add("footer");
-    footer.innerHTML = `
+  // Create footer element
+  const footer = document.createElement("footer");
+  footer.classList.add("footer");
+  footer.innerHTML = `
         <div class="footer-container">
             <div class="footer-section">
                     <img src="https://d2gt4h1eeousrn.cloudfront.net/110609312/header-fcHJMd/gNvMcYc-600x600.webp" class="logo-footer" alt="Logo">
@@ -29,7 +29,6 @@ document.addEventListener("DOMContentLoaded", function () {
                 <h3>EXPLORE TPS Pure</h3>
                 <ul>
                     <li><a href="/about-us">About us</a></li>
-                    <li><a href="/contact-us">Locations</a></li>
                 </ul>
             </div>
 
@@ -37,9 +36,6 @@ document.addEventListener("DOMContentLoaded", function () {
                 <h3>TPS Pure SERVICES</h3>
                 <ul>
                     <li><a href="/contact-us">Contact</a></li>
-                    <li><a href="#">On-site Consultation</a></li>
-                    <li><a href="#">Service and Maintenance</a></li>
-                    <li><a href="#">E-Procurement</a></li>
                     <li><a href="/contact-us">Become a Sales Partner</a></li>
                     <li><a href="/product">Our Products</a></li>
                     <li><a href="/downloads">Download Centre</a></li>
@@ -82,17 +78,17 @@ document.addEventListener("DOMContentLoaded", function () {
         </div>
     `;
 
-    // Replace existing footer or append it to the body
-    const existingFooter = document.querySelector("footer");
-    if (existingFooter) {
-        existingFooter.replaceWith(footer);
-    } else {
-        document.body.appendChild(footer);
-    }
+  // Replace existing footer or append it to the body
+  const existingFooter = document.querySelector("footer");
+  if (existingFooter) {
+    existingFooter.replaceWith(footer);
+  } else {
+    document.body.appendChild(footer);
+  }
 
-    // Apply CSS styles dynamically
-    const style = document.createElement("style");
-    style.innerHTML = `
+  // Apply CSS styles dynamically
+  const style = document.createElement("style");
+  style.innerHTML = `
         .footer {
             background: #f8f8f8;
             border-top: 1px solid #ccc;
@@ -105,7 +101,7 @@ document.addEventListener("DOMContentLoaded", function () {
             display: grid;
             grid-template-columns: repeat(4,1fr);
             justify-content: space-between;
-            gap: 10px;
+            gap: 20px;
         }
 
         .footer-section {
@@ -216,6 +212,6 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     `;
 
-    // Append styles to head
-    document.head.appendChild(style);
+  // Append styles to head
+  document.head.appendChild(style);
 });
