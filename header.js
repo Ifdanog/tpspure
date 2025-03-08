@@ -6,7 +6,8 @@ document.addEventListener("DOMContentLoaded", function () {
         <div class="header-container">
         <div class="hamburger-menu">
             <div class="bar"></div>
-            <div class="bar half"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
         </div>
         <div class="logo">
                 <a href="/">
@@ -22,14 +23,14 @@ document.addEventListener("DOMContentLoaded", function () {
             <nav class="nav-menu">
                 <a href="/">Home</a>
                 <div class="dropdown">
-                    <a href="/product" class="dropdown-toggle">Products ▾</a>
+                    <a href="/product" class="dropdown-toggle">Shop ▾</a>
                     <div class="dropdown-menu">
-                        <a href="/product/category1">Category 1</a>
-                        <a href="/product/category2">Category 2</a>
-                        <a href="/product/category3">Category 3</a>
+                        <a href="/products/food-grade-talc">Food Grade Talcum Powder</a>
+                        <a href="/product/cosmetic">Pharmaceutical Grade Talcum Powder</a>
+                        <a href="/product/cosmetic">All Products</a>
                     </div>
                 </div>
-                <a href="/services">Services</a>
+                <a href="/services">Our Services</a>
                 <a href="/about-us">About Us</a>
                 <a href="/contact-us">Contact Us</a>
                 <a href="/blogs">Blogs</a>
@@ -57,10 +58,12 @@ document.addEventListener("DOMContentLoaded", function () {
             nav.id = "nav-menu";
             nav.innerHTML = `
                 <ul>
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#services">Services</a></li>
-                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/product">Shop</a></li>
+                    <li><a href="/about-us">About Us</a></li>
+                    <li><a href="#services">Our Services</a></li>
+                    <li><a href="#contact">Contact Us</a></li>
+                    <li><a href="/blogs">Blogs</a></li>
                 </ul>
             `;
             document.body.appendChild(nav);
@@ -94,16 +97,13 @@ document.addEventListener("DOMContentLoaded", function () {
             align-items: center;
         }
         .hamburger-menu {
-            display: none;
             cursor: pointer;
         }
         .bar {
             border: 1px solid #000;
             margin: 5px;
             width: 30px;
-        }
-        .half {
-            width: 15px;
+            display: none;
         }
         .icon {
             position: absolute;
@@ -115,7 +115,7 @@ document.addEventListener("DOMContentLoaded", function () {
             margin: 0 auto;
         }
         .logo img {
-            height: 50px;
+            height: 70px;
             margin: 0 auto;
         }
         #nav-menu {
@@ -180,18 +180,17 @@ document.addEventListener("DOMContentLoaded", function () {
             display: block;
         }
         @media (max-width: 900px) {
-            .hamburger-menu {
+            .bar {
                 display: block;
                 width: 30px;
                 cursor: pointer;
             }
-                .nav-menu {
+            .nav-menu {
                 display: none;
-                }
-#nav-menu {
+            }
+            #nav-menu {
                 display: block;
-                            top: 130px;
-                }
+            }
         }
     `;
     document.head.appendChild(style);

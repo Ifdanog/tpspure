@@ -46,8 +46,8 @@ document.addEventListener("DOMContentLoaded", function () {
                     <li><a href="#">On-site Consultation</a></li>
                     <li><a href="#">Service and Maintenance</a></li>
                     <li><a href="#">E-Procurement</a></li>
-                    <li><a href="#">Become a Sales Partner</a></li>
-                    <li><a href="#">Main Catalogue</a></li>
+                    <li><a href="/contact-us">Become a Sales Partner</a></li>
+                    <li><a href="/product">Our Products</a></li>
                     <li><a href="/downloads">Download Centre</a></li>
                 </ul>
             </div>
@@ -57,9 +57,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 <ul>
                     <li><a href="https://cdn.jsdelivr.net/gh/ifdanog/tpspure@main/Materials%20Safety%20Data%20Sheet%20(MSDS)%20-%20Talcum%20Powder-2%20(2).pdf" target="_blank">Materials Safety Data Sheet (MSDS) - Talcum Powder</a></li>
                     <li><a href="https://cdn.jsdelivr.net/gh/ifdanog/tpspure@main/Talc%20Powder%20Grade%20EXTRA%20AHR97-400.pdf" target="_blank">Talc Powder Grade EXTRA AHR97-400</a></li>
-                    <li><a href="https://cdn.jsdelivr.net/gh/ifdanog/tpspure@main/ALHABTOOR%20RES.%20TRADING%20CO.%20L.L.C%20%20-%20ISO%2022000%20-%202025%20-%202026.pdf" target="_blank">ALHABTOOR RESOURCES TRADING CO. L.L.C - ISO 22000 - 2025 - 2026
-
-</a></li>
+                    <li><a href="https://cdn.jsdelivr.net/gh/ifdanog/tpspure@main/ALHABTOOR%20RES.%20TRADING%20CO.%20L.L.C%20%20-%20ISO%2022000%20-%202025%20-%202026.pdf" target="_blank">Food Grade Certificate</a></li>
                 </ul>
             </div>
 
@@ -86,8 +84,7 @@ document.addEventListener("DOMContentLoaded", function () {
             <a href="#">Privacy Policy</a> |
             <a href="#">Use of cookies</a> |
             <a href="#">Terms & Conditions</a> |
-            <a href="#">Imprint</a> |
-            <span>Excl. VAT</span>
+            <a href="#">Imprint</a>
         </div>
     `;
 
@@ -138,8 +135,8 @@ document.addEventListener("DOMContentLoaded", function () {
         }
 
         .footer-section ul li a {
-            text-decoration: none;
-            color: #333;
+            // text-decoration: none;
+            color: blue;
         }
 
         .footer-section ul li a:hover {
@@ -202,7 +199,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 align-items: center;
             }
             .footer-section {
-                width: 100%;
+                width: 90%;
                 text-align: center;
                 border-bottom: 1px solid #ccc;
             }
