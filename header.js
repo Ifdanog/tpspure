@@ -109,7 +109,8 @@ document.addEventListener("DOMContentLoaded", function () {
             <li><a href="/blogs">Blogs</a></li>
         </ul>
       `;
-      document.body.appendChild(nav);
+      const header = document.querySelector("header");
+      header.insertAdjacentElement("afterend", nav);
       document.body.style.overflow = "hidden";
 
       // Add event listener for Shop dropdown
@@ -169,10 +170,7 @@ document.addEventListener("DOMContentLoaded", function () {
             margin: 0 auto;
         }
         #nav-menu {
-            position: absolute;
-            top: 160px;
-            left: 0;
-            height: 100%;
+            height: 100vh;
             background-color: white;
             color: black;
             width: 100%;
