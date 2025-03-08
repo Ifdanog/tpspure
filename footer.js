@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", function () {
     footer.innerHTML = `
         <div class="footer-container">
             <div class="footer-section">
-                    <img src="https://d2gt4h1eeousrn.cloudfront.net/110609312/header-fcHJMd/gNvMcYc-600x600.webp" style="height: 70px;" alt="Logo">
+                    <img src="https://d2gt4h1eeousrn.cloudfront.net/110609312/header-fcHJMd/gNvMcYc-600x600.webp" class="logo-footer" alt="Logo">
                     <p style="margin-bottom: 10px;">TPS Pure offers fine talcum powder. We provide all types of talcum powder ranging from food grade talc to pharmaceutical grades.</p>
               <ul class="social-icons" role="list">
                             <li class="list-social__item">
@@ -113,6 +113,10 @@ document.addEventListener("DOMContentLoaded", function () {
             margin-bottom: 20px;
         }
 
+        .logo-footer {
+            height: 70px;
+        }
+
         .footer-section h3 {
             font-size: 16px;
             font-weight: bold;
@@ -197,9 +201,14 @@ document.addEventListener("DOMContentLoaded", function () {
                 text-align: center;
                 border-bottom: 1px solid #ccc;
             }
-                .hide {
+
+            .logo-footer {
+                height: 50px;
+            }
+
+            .hide {
                 display: none;
-                }
+            }
             .social-icons, .payment-methods {
                 justify-content: center;
             }
