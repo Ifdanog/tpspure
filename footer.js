@@ -7,9 +7,6 @@ document.addEventListener("DOMContentLoaded", function () {
             <div class="footer-section">
                     <img src="https://d2gt4h1eeousrn.cloudfront.net/110609312/header-fcHJMd/gNvMcYc-600x600.webp" style="height: 70px;" alt="Logo">
                     <p>TPS Pure offers fine talcum powder. We provide all types of talcum powder ranging from food grade talc to pharmaceutical grades.</p>
-                <p>No1.Royal Exchange <br/> London EC3V 3DG <br/> United Kingdom</p>
-                <a href="tel:+447878427090" style="line-height: 28px;">+44 7878427090</a>
-                <a href="mailto:tpspure@mail.com" style="line-height: 28px;">tpspure@mail.com</a>
               <ul class="social-icons" role="list">
                             <li class="list-social__item">
   <a target="_blank" rel="noopener" href="#" class="list-social__link link link--text link-with-icon">
