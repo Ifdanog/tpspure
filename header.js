@@ -25,9 +25,9 @@ document.addEventListener("DOMContentLoaded", function () {
                 <div class="dropdown">
                     <a href="/product" class="dropdown-toggle">Shop ▾</a>
                     <div class="dropdown-menu">
+                        <a href="/product">All Products</a>
                         <a href="/products/food-grade-talc">Food Grade Talcum Powder</a>
                         <a href="/products/pharmaceutical-grade-talc">Pharmaceutical Grade Talcum Powder</a>
-                        <a href="/product">All Products</a>
                     </div>
                 </div>
                 <a href="/services">Our Services</a>
