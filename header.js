@@ -22,14 +22,15 @@ document.addEventListener("DOMContentLoaded", function () {
             </div>
             <nav class="nav-menu">
                 <a href="/">Home</a>
-                <div class="dropdown">
-                    <a href="/product" class="dropdown-toggle">Shop ▾</a>
-                    <div class="dropdown-menu">
-                        <a href="/product">All Products</a>
-                        <a href="/products/food-grade-talc">Food Grade Talcum Powder</a>
-                        <a href="/products/pharmaceutical-grade-talc">Pharmaceutical Grade Talcum Powder</a>
-                    </div>
-                </div>
+                // <div class="dropdown">
+                //     <a href="/product" class="dropdown-toggle">Shop ▾</a>
+                //     <div class="dropdown-menu">
+                //         <a href="/product">All Products</a>
+                //         <a href="/products/food-grade-talc">Food Grade Talcum Powder</a>
+                //         <a href="/products/pharmaceutical-grade-talc">Pharmaceutical Grade Talcum Powder</a>
+                //     </div>
+                // </div>
+                <a href="/product">Shop</a>
                 <a href="/services">Our Services</a>
                 <a href="/about-us">About Us</a>
                 <a href="/contact-us">Contact Us</a>
@@ -95,14 +96,15 @@ document.addEventListener("DOMContentLoaded", function () {
       nav.innerHTML = `
         <ul>
             <li><a href="/">Home</a></li>
-            <li class="has-dropdown">
-                <a href="#" id="shop-link">Shop ▼</a>
-                <ul class="dropdown">
-                    <li><a href="/products/food-grade-talc">Food Grade Talcum Powder</a></li>
-                    <li><a href="/products/pharmaceutical-grade-talc">Pharmaceutical Grade Talcum Powder</a></li>
-                    <li><a href="/product">All Products</a></li>
-                </ul>
-            </li>
+            // <li class="has-dropdown">
+            //     <a href="#" id="shop-link">Shop ▼</a>
+            //     <ul class="dropdown">
+            //         <li><a href="/products/food-grade-talc">Food Grade Talcum Powder</a></li>
+            //         <li><a href="/products/pharmaceutical-grade-talc">Pharmaceutical Grade Talcum Powder</a></li>
+            //         <li><a href="/product">All Products</a></li>
+            //     </ul>
+            // </li>
+            <li><a href="/product">Shop</a></li>
             <li><a href="/about-us">About Us</a></li>
             <li><a href="/services">Our Services</a></li>
             <li><a href="/contact-us">Contact Us</a></li>
