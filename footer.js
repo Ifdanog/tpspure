@@ -29,6 +29,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 <h3>EXPLORE TPS Pure</h3>
                 <ul>
                     <li><a href="/about-us">About us</a></li>
+                    <li><a href="/blogs">Blogs</a></li>
                 </ul>
             </div>
 
