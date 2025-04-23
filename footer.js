@@ -65,7 +65,7 @@ document.addEventListener("DOMContentLoaded", function () {
             <div class="footer-section">
                 <h3>TPS Pure FOR THE ENVIRONMENT</h3>
                 <div class="eco-certificates">
-                    <img src="https://mlhnqp4qpyei.i.optimole.com/w:1024/h:239/q:mauto/ig:avif/https://habtoorresources.com/wp-content/uploads/2024/11/9001_UAF_ARS_-_Logo-HD-1024x239.webp" alt="EcoVadis" style="width: 100%;">
+                    <img src="https://mlhnqp4qpyei.i.optimole.com/w:1024/h:239/q:mauto/ig:avif/https://habtoorresources.com/wp-content/uploads/2024/11/9001_UAF_ARS_-_Logo-HD-1024x239.webp" alt="EcoVadis" style="width: 70%;">
                 </div>
             </div>
         </div>
@@ -166,8 +166,12 @@ document.addEventListener("DOMContentLoaded", function () {
             gap: 10px;
         }
 
-        .payment-methods img,
-        .eco-certificates img {
+        ,
+        .eco-certificates {
+          margin: auto
+        }
+        
+        .payment-methods img {
             width: 80px;
             margin-right: 10px;
         }
