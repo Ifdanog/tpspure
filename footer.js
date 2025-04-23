@@ -165,10 +165,10 @@ document.addEventListener("DOMContentLoaded", function () {
             align-items: center;
             gap: 10px;
         }
-
-        ,
+        
         .eco-certificates {
-          margin: auto
+            display: flex;
+            justify-content: center;
         }
         
         .payment-methods img {
