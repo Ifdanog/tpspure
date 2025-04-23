@@ -11,7 +11,7 @@ document.addEventListener("DOMContentLoaded", function () {
         </div>
         <div class="logo">
                 <a href="/">
-                    <img src="https://d2gt4h1eeousrn.cloudfront.net/110609312/header-fcHJMd/gNvMcYc-600x600.webp" alt="Logo">
+                    <img src="https://d2gt4h1eeousrn.cloudfront.net/110609312/header-fcHJMd/kU7asoo-600x600.webp" alt="Logo">
                 </a>
             </div>
             <div class="icon">
