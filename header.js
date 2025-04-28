@@ -152,7 +152,7 @@ document.addEventListener("DOMContentLoaded", function () {
             margin: 0 auto;
         }
         .logo img {
-            height: 80px;
+            height: 90px;
             margin: 0 auto;
         }
         #nav-menu {
