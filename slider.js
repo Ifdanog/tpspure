@@ -67,7 +67,10 @@ const slides = [
 
       sliderContainer.appendChild(indicatorsContainer);
 
-      document.body.appendChild(sliderContainer);
+      const header = document.querySelector(".custom-header");
+      if (header && header.parentNode) {
+        header.parentNode.insertBefore(sliderContainer, header.nextSibling);
+      }
 
       slides.forEach((slide) => {
         const slideDiv = document.createElement("div");
@@ -86,8 +89,8 @@ const slides = [
 
         slideDiv.innerHTML = `
       <div style="margin-left: 100px; width: 50%;">
-        <h1 style="margin-bottom: 10px;">${slide.title}</h1>
-        <p style="margin-bottom: 20px;">${slide.description}</p>
+        <h1 style="margin-bottom: 10px; font-size: 64px; color: #004aad;">${slide.title}</h1>
+        <p style="margin-bottom: 40px; font-size: 18px;">${slide.description}</p>
         <a href="${slide.buttonLink}" style="padding: 10px 20px; background: #0047ab; color: #fff; text-decoration: none; border-radius: 4px;">${slide.buttonText}</a>
       </div>
     `;
@@ -127,8 +130,7 @@ const slides = [
 
         // Update indicator styles
         indicators.forEach((ind, i) => {
-          ind.style.background =
-            i === index ? "#ffffff" : "rgba(255,255,255,0.3)";
+          ind.style.background = i === index ? "#000" : "rgba(0,0,0,0.3)";
         });
       }
 
