@@ -67,7 +67,7 @@ const slides = [
 
       sliderContainer.appendChild(indicatorsContainer);
 
-      const header = document.querySelector(".custom-header");
+      const header = document.querySelector("header");
       if (header && header.parentNode) {
         header.parentNode.insertBefore(sliderContainer, header.nextSibling);
       }
