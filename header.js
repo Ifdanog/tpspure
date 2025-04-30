@@ -1,8 +1,8 @@
 document.addEventListener("DOMContentLoaded", function () {
-  // Create the new header structure
-  const newHeader = document.createElement("header");
-  newHeader.classList.add("custom-header");
-  newHeader.innerHTML = `
+        // Create the new header structure
+        const newHeader = document.createElement("header");
+        newHeader.classList.add("custom-header");
+        newHeader.innerHTML = `
         <div class="header-container">
         <div class="hamburger-menu">
             <div class="bar"></div>
@@ -31,9 +31,10 @@ document.addEventListener("DOMContentLoaded", function () {
             <div class="dropdown">
                 <a href="javascript:void(0)" class="dropbtn">Downloads</a>
                 <div class="dropdown-content">
-                    <a href="/downloads/brochure.pdf" target="_blank">Brochure</a>
-                    <a href="/downloads/manual.pdf" target="_blank">User Manual</a>
-                    <a href="/downloads/software.zip" target="_blank">Software</a>
+                    <a href="https://cdn.jsdelivr.net/gh/ifdanog/tpspure@main/Materials%20Safety%20Data%20Sheet%20(MSDS)%20-%20Talcum%20Powder-2%202.pdf" target="_blank">Materials Safety Data Sheet (MSDS) - Talcum Powder</a>
+                    <a href="https://cdn.jsdelivr.net/gh/ifdanog/tpspure@main/TPS%20Premium%20Talc%20Powder.pdf" target="_blank">TPS Premium Talc Powder</a>
+                    <a href="https://cdn.jsdelivr.net/gh/ifdanog/tpspure@main/Talc%20Powder%20Grade%20EXTRA%20AHR97-400.pdf" target="_blank">Talc Powder Grade EXTRA AHR97-400</a>
+                    <a href="https://cdn.jsdelivr.net/gh/ifdanog/tpspure@main/ALHABTOOR%20RES.%20TRADING%20CO.%20L.L.C%20%20-%20ISO%2022000%20-%202025%20-%202026.pdf" target="_blank">Food Grade Certificate</a>
                 </div>
             </div>
         </nav>
@@ -50,82 +51,94 @@ document.addEventListener("DOMContentLoaded", function () {
         </div>
     `;
 
-  // Replace the existing header
-  const existingHeader = document.querySelector("header");
+        // Replace the existing header
+        const existingHeader = document.querySelector("header");
 
-  if (existingHeader) {
-    existingHeader.replaceWith(newHeader);
-  } else {
-    document.body.appendChild(newHeader);
-  }
+        if (existingHeader) {
+          existingHeader.replaceWith(newHeader);
+        } else {
+          document.body.appendChild(newHeader);
+        }
 
-  document.getElementById("search-icon").addEventListener("click", function () {
-    const searchCon = document.getElementById("search-container");
-    searchCon.classList.toggle("active");
-    searchCon.focus();
-  });
+        document
+          .getElementById("search-icon")
+          .addEventListener("click", function () {
+            const searchCon = document.getElementById("search-container");
+            searchCon.classList.toggle("active");
+            searchCon.focus();
+          });
 
-  // Hide search Con when clicking outside
-  document.addEventListener("click", function (event) {
-    const searchCon = document.getElementById("search-container");
-    const searchIcon = document.getElementById("search-icon");
-    if (
-      !searchCon.contains(event.target) &&
-      !searchIcon.contains(event.target)
-    ) {
-      searchCon.classList.remove("active");
-    }
-  });
+        // Hide search Con when clicking outside
+        document.addEventListener("click", function (event) {
+          const searchCon = document.getElementById("search-container");
+          const searchIcon = document.getElementById("search-icon");
+          if (
+            !searchCon.contains(event.target) &&
+            !searchIcon.contains(event.target)
+          ) {
+            searchCon.classList.remove("active");
+          }
+        });
 
-  // Handle form submission
-  document
-    .getElementById("search-form")
-    .addEventListener("submit", function (event) {
-      const searchValue = document.getElementById("search-input").value.trim();
-      if (!searchValue) {
-        event.preventDefault(); // Prevent form submission if empty
-      }
-    });
+        // Handle form submission
+        document
+          .getElementById("search-form")
+          .addEventListener("submit", function (event) {
+            const searchValue = document
+              .getElementById("search-input")
+              .value.trim();
+            if (!searchValue) {
+              event.preventDefault(); // Prevent form submission if empty
+            }
+          });
 
-  const hamburgerMenu = document.querySelector(".hamburger-menu");
+        const hamburgerMenu = document.querySelector(".hamburger-menu");
 
-  hamburgerMenu.onclick = () => {
-    let nav = document.getElementById("nav-menu");
+        hamburgerMenu.onclick = () => {
+          let nav = document.getElementById("nav-menu");
 
-    if (!nav) {
-      nav = document.createElement("nav");
-      nav.id = "nav-menu";
-      nav.innerHTML = `
-        <ul>
-            <li><a href="/">Home</a></li>
-            <li><a href="/product">Shop</a></li>
-            <li><a href="/about-us">About Us</a></li>
-            <li><a href="/services">Our Services</a></li>
-            <li><a href="/contact-us">Contact Us</a></li>
-            <li><a href="/blogs">Blogs</a></li>
-        </ul>
+          if (!nav) {
+            nav = document.createElement("nav");
+            nav.id = "nav-menu";
+            nav.innerHTML = `
+              <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/product">Shop</a></li>
+                <li><a href="/about-us">About Us</a></li>
+                <li><a href="/services">Our Services</a></li>
+                <li><a href="/contact-us">Contact Us</a></li>
+                <li><a href="/blogs">Blogs</a></li>
+                <li class="dropdown">
+                  <a href="javascript:void(0)" class="dropbtn toggle-dropdown">Downloads</a>
+                  <div class="dropdown-content">
+                    <a href="https://cdn.jsdelivr.net/gh/ifdanog/tpspure@main/Materials%20Safety%20Data%20Sheet%20(MSDS)%20-%20Talcum%20Powder-2%202.pdf" target="_blank">Materials Safety Data Sheet (MSDS)</a>
+                    <a href="https://cdn.jsdelivr.net/gh/ifdanog/tpspure@main/TPS%20Premium%20Talc%20Powder.pdf" target="_blank">TPS Premium Talc Powder</a>
+                    <a href="https://cdn.jsdelivr.net/gh/ifdanog/tpspure@main/Talc%20Powder%20Grade%20EXTRA%20AHR97-400.pdf" target="_blank">Talc Powder Grade EXTRA AHR97-400</a>
+                    <a href="https://cdn.jsdelivr.net/gh/ifdanog/tpspure@main/ALHABTOOR%20RES.%20TRADING%20CO.%20L.L.C%20%20-%20ISO%2022000%20-%202025%20-%202026.pdf" target="_blank">Food Grade Certificate</a>
+                  </div>
+                </li>
+              </ul>
       `;
-      const header = document.querySelector("header");
-      header.insertAdjacentElement("afterend", nav);
-      document.body.style.overflow = "hidden";
+            const header = document.querySelector("header");
+            header.insertAdjacentElement("afterend", nav);
+            document.body.style.overflow = "hidden";
 
-      // Add event listener for Shop dropdown
-      document.getElementById("shop-link").onclick = (event) => {
-        event.preventDefault();
-        const dropdown = event.target.nextElementSibling;
-        dropdown.style.display =
-          dropdown.style.display === "block" ? "none" : "block";
-      };
-    } else {
-      const isHidden = nav.style.display === "none" || !nav.style.display;
-      nav.style.display = isHidden ? "block" : "none";
-      document.body.style.overflow = isHidden ? "hidden" : "auto";
-    }
-  };
+            const toggle = document.querySelector(".toggle-dropdown");
+            const dropdown = toggle.closest(".dropdown");
 
-  // Apply styles dynamically
-  const style = document.createElement("style");
-  style.textContent = `
+            toggle.addEventListener("click", function () {
+              dropdown.classList.toggle("show");
+            });
+          } else {
+            const isHidden = nav.style.display === "none" || !nav.style.display;
+            nav.style.display = isHidden ? "block" : "none";
+            document.body.style.overflow = isHidden ? "hidden" : "auto";
+          }
+        };
+
+        // Apply styles dynamically
+        const style = document.createElement("style");
+        style.textContent = `
         .custom-header {
             background: white;
             padding: 15px 20px;
@@ -180,12 +193,38 @@ document.addEventListener("DOMContentLoaded", function () {
         }
         #nav-menu ul li {
             padding: 20px 0;
+              position: relative;
+
         }  
         #nav-menu ul li a {
             text-decoration: none;
             font-size: 20px;
             color: black;
         }  
+
+#nav-menu .dropdown-content {
+  display: none;
+  flex-direction: column;
+  background-color: #fff;
+  position: static;
+  margin-top: 10px;
+}
+
+#nav-menu .dropdown-content a {
+  padding: 10px 16px;
+  display: block;
+  text-decoration: none;
+  color: #333;
+}
+
+#nav-menu .dropdown-content a:hover {
+  background-color: #f0f0f0;
+}
+
+#nav-menu .dropdown.show .dropdown-content {
+  display: flex;
+}
+
         .nav-menu {
   display: flex;
   align-items: center;
@@ -280,5 +319,5 @@ document.addEventListener("DOMContentLoaded", function () {
             }
         }
     `;
-  document.head.appendChild(style);
-});
+        document.head.appendChild(style);
+      });
