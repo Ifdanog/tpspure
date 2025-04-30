@@ -1,4 +1,4 @@
-document.addEventListener("DOMContentLoaded", function () {
+ document.addEventListener("DOMContentLoaded", function () {
         // Create the new header structure
         const newHeader = document.createElement("header");
         newHeader.classList.add("custom-header");
@@ -20,15 +20,16 @@ document.addEventListener("DOMContentLoaded", function () {
             <a role="button" class="ins-header__icon ins-header__icon--cart ins-header__icon--cart-empty" data-count="0" aria-label="Go to your shopping cart" title="Go to your shopping cart" target="_self" href="/products/cart"><svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M18 23.5H6C3.8 23.5 2 21.7 2 19.5V4.2H22V19.5C22 21.7 20.2 23.5 18 23.5ZM3 5.2V19.5C3 21.2 4.3 22.5 6 22.5H18C19.7 22.5 21 21.2 21 19.5V5.2H3Z" fill="currentColor"></path><path d="M12 1C9.7 1 8 2.5 8 4.5C8 4.8 7.8 5 7.5 5C7.2 5 7 4.8 7 4.5C7 1.8 9.3 0 12 0C14.7 0 17 1.8 17 4.5C17 4.8 16.8 5 16.5 5C16.2 5 16 4.8 16 4.5C16 2.5 14.3 1 12 1Z" fill="currentColor" fill-rule="evenodd" clip-rule="evenodd"></path><path d="M2 4.18018H22V19.5002C22 21.7093 20.2091 23.5002 18 23.5002H6C3.79086 23.5002 2 21.7093 2 19.5002V4.18018Z" fill="currentColor" fill-rule="evenodd" clip-rule="evenodd" class="ins-cart-has-good"></path></svg></a>
             </div>
             </div>
-          <nav class="nav-menu">
-            <a href="/">Home</a>
-            <a href="/product">Shop</a>
-            <a href="/services">Our Services</a>
-            <a href="/about-us">About Us</a>
-            <a href="/contact-us">Contact Us</a>
-            <a href="/blogs">Blogs</a>
+          <nav>
+          <ul class="nav-menu">
+            <li><a href="/">Home</a></li>
+            <li><a href="/product">Shop</a></li>
+            <li><a href="/services">Our Services</a></li>
+            <li><a href="/about-us">About Us</a></li>
+            <li><a href="/contact-us">Contact Us</a></li>
+            <li><a href="/blogs">Blogs</a></li>
         
-            <div class="dropdown">
+            <li class="dropdown">
                 <a href="javascript:void(0)" class="dropbtn">Downloads</a>
                 <div class="dropdown-content">
                     <a href="https://cdn.jsdelivr.net/gh/ifdanog/tpspure@main/Materials%20Safety%20Data%20Sheet%20(MSDS)%20-%20Talcum%20Powder-2%202.pdf" target="_blank">Materials Safety Data Sheet (MSDS) - Talcum Powder</a>
@@ -36,7 +37,8 @@ document.addEventListener("DOMContentLoaded", function () {
                     <a href="https://cdn.jsdelivr.net/gh/ifdanog/tpspure@main/Talc%20Powder%20Grade%20EXTRA%20AHR97-400.pdf" target="_blank">Talc Powder Grade EXTRA AHR97-400</a>
                     <a href="https://cdn.jsdelivr.net/gh/ifdanog/tpspure@main/ALHABTOOR%20RES.%20TRADING%20CO.%20L.L.C%20%20-%20ISO%2022000%20-%202025%20-%202026.pdf" target="_blank">Food Grade Certificate</a>
                 </div>
-            </div>
+            </li>
+        </ul>
         </nav>
 
 
@@ -217,6 +219,10 @@ document.addEventListener("DOMContentLoaded", function () {
   color: #333;
 }
 
+#nav-menu .dropdown-content a:hover {
+  background-color: #f0f0f0;
+}
+
 #nav-menu .dropdown.show .dropdown-content {
   display: flex;
 }
@@ -225,6 +231,7 @@ document.addEventListener("DOMContentLoaded", function () {
   display: flex;
   align-items: center;
   gap: 16px;
+  list-style: none;
 }
 
 .nav-menu .dropdown {
@@ -243,7 +250,7 @@ document.addEventListener("DOMContentLoaded", function () {
   position: absolute;
   top: 100%;
   left: 0;
-  min-width: 160px;
+  min-width: 250px;
   background-color: white;
   box-shadow: 0 8px 16px rgba(0,0,0,0.15);
   z-index: 999;
@@ -254,10 +261,6 @@ document.addEventListener("DOMContentLoaded", function () {
   padding: 10px 14px;
   color: black;
   text-decoration: none;
-}
-
-.nav-menu .dropdown-content a:hover {
-  background-color: #f2f2f2;
 }
 
 .nav-menu .dropdown:hover .dropdown-content {
