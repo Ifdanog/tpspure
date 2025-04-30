@@ -217,10 +217,6 @@ document.addEventListener("DOMContentLoaded", function () {
   color: #333;
 }
 
-#nav-menu .dropdown-content a:hover {
-  background-color: #f0f0f0;
-}
-
 #nav-menu .dropdown.show .dropdown-content {
   display: flex;
 }
