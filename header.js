@@ -187,43 +187,47 @@ document.addEventListener("DOMContentLoaded", function () {
             color: black;
         }  
         .nav-menu {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            gap: 20px;
-        }
-        .nav-menu a {
-            color: black;
-            text-decoration: none;
-            padding: 10px;
-        }
-        .nav-menu a:hover {
-            text-decoration: underline;
-        }
-        .dropdown {
-            position: relative;
-        }
-        .dropdown-menu {
-            display: none;
-            position: absolute;
-            background: white;
-            min-width: 150px;
-            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-            z-index: 10;
-            border-radius: 5px;
-        }
-        .dropdown-menu a {
-            display: block;
-            padding: 10px;
-            text-decoration: none;
-            color: black;
-        }
-        .dropdown-menu a:hover {
-            background-color: #f1f1f1;
-        }
-        .dropdown:hover .dropdown-menu {
-            display: block;
-        }
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.nav-menu .dropdown {
+  position: relative;
+}
+
+.nav-menu .dropbtn {
+  text-decoration: none;
+  color: inherit;
+  padding: 8px;
+  cursor: pointer;
+}
+
+.nav-menu .dropdown-content {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  min-width: 160px;
+  background-color: white;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.15);
+  z-index: 999;
+}
+
+.nav-menu .dropdown-content a {
+  display: block;
+  padding: 10px 14px;
+  color: black;
+  text-decoration: none;
+}
+
+.nav-menu .dropdown-content a:hover {
+  background-color: #f2f2f2;
+}
+
+.nav-menu .dropdown:hover .dropdown-content {
+  display: block;
+}
 
         /* Search Input Styling */
         .search-container {
