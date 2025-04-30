@@ -234,7 +234,7 @@ document.addEventListener("DOMContentLoaded", function () {
   list-style: none;
 }
 
-.nav-menu ul li a {
+.nav-menu li a {
             text-decoration: none;
             font-size: 20px;
             color: black !important;
