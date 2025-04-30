@@ -178,7 +178,7 @@ document.addEventListener("DOMContentLoaded", function () {
         }
         .logo img {
             height: 90px;
-            margin: 0 auto;
+            margin: 10px auto;
         }
         #nav-menu {
             height: 100vh;
