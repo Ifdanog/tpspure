@@ -11,9 +11,9 @@ document.addEventListener("DOMContentLoaded", function () {
 
             <div class="footer-section">
                 <ul>
+                    <li><a href="/product">Products</a></li>
                     <li><a href="/about-us">About us</a></li>
                     <li><a href="/blogs">Blogs</a></li>
-                    <li><a href="/product">Products</a></li>
                 </ul>
             </div>
 
@@ -30,7 +30,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 <h3>Downloads</h3>
                 <ul>
                     <li><a href="https://cdn.jsdelivr.net/gh/ifdanog/tpspure@main/Materials%20Safety%20Data%20Sheet%20(MSDS)%20-%20Talcum%20Powder-2%202.pdf" target="_blank">Materials Safety Data Sheet (MSDS) - Talcum Powder</a></li>
-                    <li><a href="https://cdn.jsdelivr.net/gh/ifdanog/tpspure@main/AHR%20Premium%20Talc%20Powder.pdf" target="_blank">AHR Premium Talc Powder</a></li>
+                    <li><a href="https://cdn.jsdelivr.net/gh/ifdanog/tpspure@main/TPS%20Premium%20Talc%20Powder.pdf" target="_blank">TPS Premium Talc Powder</a></li>
                     <li><a href="https://cdn.jsdelivr.net/gh/ifdanog/tpspure@main/Talc%20Powder%20Grade%20EXTRA%20AHR97-400.pdf" target="_blank">Talc Powder Grade EXTRA AHR97-400</a></li>
                     <li><a href="https://cdn.jsdelivr.net/gh/ifdanog/tpspure@main/ALHABTOOR%20RES.%20TRADING%20CO.%20L.L.C%20%20-%20ISO%2022000%20-%202025%20-%202026.pdf" target="_blank">Food Grade Certificate</a></li>
                 </ul>
