@@ -20,14 +20,24 @@ document.addEventListener("DOMContentLoaded", function () {
             <a role="button" class="ins-header__icon ins-header__icon--cart ins-header__icon--cart-empty" data-count="0" aria-label="Go to your shopping cart" title="Go to your shopping cart" target="_self" href="/products/cart"><svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M18 23.5H6C3.8 23.5 2 21.7 2 19.5V4.2H22V19.5C22 21.7 20.2 23.5 18 23.5ZM3 5.2V19.5C3 21.2 4.3 22.5 6 22.5H18C19.7 22.5 21 21.2 21 19.5V5.2H3Z" fill="currentColor"></path><path d="M12 1C9.7 1 8 2.5 8 4.5C8 4.8 7.8 5 7.5 5C7.2 5 7 4.8 7 4.5C7 1.8 9.3 0 12 0C14.7 0 17 1.8 17 4.5C17 4.8 16.8 5 16.5 5C16.2 5 16 4.8 16 4.5C16 2.5 14.3 1 12 1Z" fill="currentColor" fill-rule="evenodd" clip-rule="evenodd"></path><path d="M2 4.18018H22V19.5002C22 21.7093 20.2091 23.5002 18 23.5002H6C3.79086 23.5002 2 21.7093 2 19.5002V4.18018Z" fill="currentColor" fill-rule="evenodd" clip-rule="evenodd" class="ins-cart-has-good"></path></svg></a>
             </div>
             </div>
-            <nav class="nav-menu">
-                <a href="/">Home</a>
-                <a href="/product">Shop</a>
-                <a href="/services">Our Services</a>
-                <a href="/about-us">About Us</a>
-                <a href="/contact-us">Contact Us</a>
-                <a href="/blogs">Blogs</a>
-            </nav>
+          <nav class="nav-menu">
+            <a href="/">Home</a>
+            <a href="/product">Shop</a>
+            <a href="/services">Our Services</a>
+            <a href="/about-us">About Us</a>
+            <a href="/contact-us">Contact Us</a>
+            <a href="/blogs">Blogs</a>
+        
+            <div class="dropdown">
+                <a href="javascript:void(0)" class="dropbtn">Downloads</a>
+                <div class="dropdown-content">
+                    <a href="/downloads/brochure.pdf" target="_blank">Brochure</a>
+                    <a href="/downloads/manual.pdf" target="_blank">User Manual</a>
+                    <a href="/downloads/software.zip" target="_blank">Software</a>
+                </div>
+            </div>
+        </nav>
+
 
           <div id="search-container" class="search-container">
             <form id="search-form" action="/products/search" method="GET">
