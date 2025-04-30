@@ -1,4 +1,4 @@
- document.addEventListener("DOMContentLoaded", function () {
+document.addEventListener("DOMContentLoaded", function () {
         // Create the new header structure
         const newHeader = document.createElement("header");
         newHeader.classList.add("custom-header");
@@ -233,6 +233,12 @@
   gap: 16px;
   list-style: none;
 }
+
+.nav-menu ul li a {
+            text-decoration: none;
+            font-size: 20px;
+            color: black;
+        }  
 
 .nav-menu .dropdown {
   position: relative;
