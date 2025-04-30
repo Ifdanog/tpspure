@@ -230,14 +230,14 @@ document.addEventListener("DOMContentLoaded", function () {
         .nav-menu {
   display: flex;
   align-items: center;
-  gap: 16px;
+  gap: 30px;
   list-style: none;
 }
 
 .nav-menu ul li a {
             text-decoration: none;
             font-size: 20px;
-            color: black;
+            color: black !important;
         }  
 
 .nav-menu .dropdown {
