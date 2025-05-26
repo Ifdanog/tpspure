@@ -32,9 +32,9 @@ document.addEventListener("DOMContentLoaded", function () {
             <li class="dropdown">
                 <a href="javascript:void(0)" class="dropbtn">Downloads</a>
                 <div class="dropdown-content">
-                    <a href="https://cdn.jsdelivr.net/gh/ifdanog/tpspure@main/Materials%20Safety%20Data%20Sheet%20(MSDS)%20-%20Talcum%20Powder-2%202.pdf" target="_blank">Materials Safety Data Sheet (MSDS) - Talcum Powder</a>
+                    <a href="https://cdn.jsdelivr.net/gh/ifdanog/tpspure@main/Materials%20Safety%20Data%20Sheet%20(MSDS)%20-%20Talcum%20Powder-2%20(3).pdf" target="_blank">Materials Safety Data Sheet (MSDS) - Talcum Powder</a>
                     <a href="https://cdn.jsdelivr.net/gh/ifdanog/tpspure@main/TPS%20Premium%20Talc%20Powder.pdf" target="_blank">TPS Premium Talc Powder</a>
-                    <a href="https://cdn.jsdelivr.net/gh/ifdanog/tpspure@main/Talc%20Powder%20Grade%20EXTRA%20AHR97-400.pdf" target="_blank">Talc Powder Grade EXTRA AHR97-400</a>
+                    <a href="https://cdn.jsdelivr.net/gh/ifdanog/tpspure@main/Talc%20Powder%20Grade%20EXTRA%20AHR97-400%20(4).pdf" target="_blank">Talc Powder Grade EXTRA AHR97-400</a>
                     <a href="https://cdn.jsdelivr.net/gh/ifdanog/tpspure@main/ALHABTOOR%20RES.%20TRADING%20CO.%20L.L.C%20%20-%20ISO%2022000%20-%202025%20-%202026.pdf" target="_blank">Food Grade Certificate</a>
                 </div>
             </li>
