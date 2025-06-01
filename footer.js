@@ -7,15 +7,19 @@ document.addEventListener("DOMContentLoaded", function () {
             <div class="footer-section">
                     <img src="https://d2gt4h1eeousrn.cloudfront.net/110609312/header-fcHJMd/kU7asoo-600x600.webp" class="logo-footer" alt="Logo">
                     <p style="margin-bottom: 10px;">TPS Pure offers fine talcum powder. We provide all types of talcum powder ranging from food grade talc to pharmaceutical grades and cosmetics.</p>
+                    <h3>OFFICE HOURS & INFO</h3>
                     <p>TPS Fine Talc Limited, No1.Royal Exchange </p>
                     <p>London EC3V 3DG, United Kingdom</p>
                     <p><b>Company Reg No:</b> 16437539</p>
-                    <p><a href="tel:+4402080583570" style="color: blue;">0208 0583570</a></p>
+                    <p><a href="tel:+4402080583570" style="color: blue;">+44 (0) 208 0583570</a></p>
                     <p><a href="mailto:info@finetalc.co.uk" style="color: blue;">info@finetalc.co.uk</a></p>
+                    <p>M-Fri: 9am - 5:00pm</p>
+                    <p>Sat & Sun: Closed</p>
+                    <p>Bank Holidays: Closed</p>
             </div>
 
             <div class="footer-section">
-                <h3>QUICK LINKS</h3>
+                <h3>NEED HELP?</h3>
                 <ul>
                     <li><a href="/product">Products</a></li>
                     <li><a href="/about-us">About us</a></li>
@@ -60,11 +64,10 @@ document.addEventListener("DOMContentLoaded", function () {
         </div>
 
         <div class="footer-bottom">
-            <a href="#">Delivery and Payment</a> |
-            <a href="#">Privacy Policy</a> |
-            <a href="#">Use of cookies</a> |
-            <a href="#">Terms & Conditions</a> |
-            <a href="#">Imprint</a>
+            <a href="https://finetalc.co.uk/products/pages/shipping-payment">Shipping and Payment Info</a> |
+            <a href="https://finetalc.co.uk/products/pages/privacy-policy">Privacy Policy</a> |
+            <a href="https://finetalc.co.uk/products/pages/returns">Return Policy</a> |
+            <a href="https://finetalc.co.uk/products/pages/terms">Terms & Conditions</a> |
         </div>
     `;
 
