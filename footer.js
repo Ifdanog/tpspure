@@ -9,9 +9,9 @@ document.addEventListener("DOMContentLoaded", function () {
                     <p style="margin-bottom: 10px;">TPS Pure offers fine talcum powder. We provide all types of talcum powder ranging from food grade talc to pharmaceutical grades and cosmetics.</p>
                     <p>TPS Fine Talc Limited, No1.Royal Exchange </p>
                     <p>London EC3V 3DG, United Kingdom</p>
-                    <p><a href="tel:+4402080583570" style="color: blue;">02080583570</a></p>
+                    <p><b>Company Reg No:</b> 16437539</p>
+                    <p><a href="tel:+4402080583570" style="color: blue;">0208 0583570</a></p>
                     <p><a href="mailto:info@finetalc.co.uk" style="color: blue;">info@finetalc.co.uk</a></p>
-                    <p><b>Company Reg No:</b></p>
             </div>
 
             <div class="footer-section">
