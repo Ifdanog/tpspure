@@ -30,7 +30,7 @@ document.addEventListener("DOMContentLoaded", function () {
             <li><a href="/blogs">Blogs</a></li>
         
             <li class="dropdown">
-                <a href="javascript:void(0)" class="dropbtn">Downloads</a>
+                <a href="javascript:void(0)" class="dropbtn">Lab Reports</a>
                 <div class="dropdown-content">
                     <a href="https://cdn.jsdelivr.net/gh/ifdanog/tpspure@main/Materials%20Safety%20Data%20Sheet%20(MSDS)%20-%20Talcum%20Powder.pdf" target="_blank">Materials Safety Data Sheet (MSDS) - Talcum Powder</a>
                     <a href="https://cdn.jsdelivr.net/gh/ifdanog/tpspure@main/TPS%20Premium%20Talc%20Powder.pdf" target="_blank">TPS Premium Talc Powder</a>
@@ -111,7 +111,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 <li><a href="/contact-us">Contact Us</a></li>
                 <li><a href="/blogs">Blogs</a></li>
                 <li class="dropdown">
-                  <a href="javascript:void(0)" class="dropbtn toggle-dropdown">Downloads</a>
+                  <a href="javascript:void(0)" class="dropbtn toggle-dropdown">Lab Reports</a>
                   <div class="dropdown-content">
                     <a href="https://cdn.jsdelivr.net/gh/ifdanog/tpspure@main/Materials%20Safety%20Data%20Sheet%20(MSDS)%20-%20Talcum%20Powder.pdf" target="_blank">Materials Safety Data Sheet (MSDS) - Talcum Powder</a>
                     <a href="https://cdn.jsdelivr.net/gh/ifdanog/tpspure@main/TPS%20Premium%20Talc%20Powder.pdf" target="_blank">TPS Premium Talc Powder</a>
