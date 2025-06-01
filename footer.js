@@ -7,8 +7,9 @@ document.addEventListener("DOMContentLoaded", function () {
             <div class="footer-section">
                     <img src="https://d2gt4h1eeousrn.cloudfront.net/110609312/header-fcHJMd/kU7asoo-600x600.webp" class="logo-footer" alt="Logo">
                     <p style="margin-bottom: 10px;">TPS Pure offers fine talcum powder. We provide all types of talcum powder ranging from food grade talc to pharmaceutical grades and cosmetics.</p>
-                    <p>TPS Fine Talc Limited, No1.Royal Exchange London EC3V 3DG, United Kingdom </p>
-                    <p><a href="tel:+4402080583570" style="color: blue;">+44 (0) 208 0583570</a></p>
+                    <p>TPS Fine Talc Limited, No1.Royal Exchange </p>
+                    <p>London EC3V 3DG, United Kingdom</p>
+                    <p><a href="tel:+4402080583570" style="color: blue;">02080583570</a></p>
                     <p><a href="mailto:info@finetalc.co.uk" style="color: blue;">info@finetalc.co.uk</a></p>
             </div>
 
