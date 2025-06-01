@@ -13,13 +13,13 @@ document.addEventListener("DOMContentLoaded", function () {
                     <p><b>Company Reg No:</b> 16437539</p>
                     <p><a href="tel:+4402080583570" style="color: blue;">+44 (0) 208 0583570</a></p>
                     <p><a href="mailto:info@finetalc.co.uk" style="color: blue;">info@finetalc.co.uk</a></p>
-                    <p>M-Fri: 9am - 5:00pm</p>
+                    <p style="margin-top: 10px;">Mon-Fri: 9am - 5:00pm</p>
                     <p>Sat & Sun: Closed</p>
                     <p>Bank Holidays: Closed</p>
             </div>
 
             <div class="footer-section">
-                <h3>NEED HELP?</h3>
+                <h3>QUICK LINKS</h3>
                 <ul>
                     <li><a href="/product">Products</a></li>
                     <li><a href="/about-us">About us</a></li>
@@ -28,7 +28,7 @@ document.addEventListener("DOMContentLoaded", function () {
             </div>
 
             <div class="footer-section">
-                <h3>SERVICES</h3>
+                <h3>NEED HELP?</h3>
                 <ul>
                     <li><a href="/contact-us">Contact us</a></li>
                     <li><a href="/contact-us">Become a Sales Partner</a></li>
