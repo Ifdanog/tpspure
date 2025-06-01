@@ -25,10 +25,6 @@ document.addEventListener("DOMContentLoaded", function () {
             <li><a href="/">Home</a></li>
             <li><a href="/product">Shop</a></li>
             <li><a href="/services">Our Services</a></li>
-            <li><a href="/about-us">About Us</a></li>
-            <li><a href="/contact-us">Contact Us</a></li>
-            <li><a href="/blogs">Blogs</a></li>
-        
             <li class="dropdown">
                 <a href="javascript:void(0)" class="dropbtn">Lab Reports</a>
                 <div class="dropdown-content">
@@ -38,6 +34,9 @@ document.addEventListener("DOMContentLoaded", function () {
                     <a href="https://cdn.jsdelivr.net/gh/ifdanog/tpspure@main/ALHABTOOR%20RES.%20TRADING%20CO.%20L.L.C%20%20-%20ISO%2022000%20-%202025%20-%202026.pdf" target="_blank">Food Grade Certificate</a>
                 </div>
             </li>
+            <li><a href="/about-us">About Us</a></li>
+            <li><a href="/contact-us">Contact Us</a></li>
+            <li><a href="/blogs">Blogs</a></li>
         </ul>
         </nav>
 
@@ -108,9 +107,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 <li><a href="/product">Shop</a></li>
                 <li><a href="/about-us">About Us</a></li>
                 <li><a href="/services">Our Services</a></li>
-                <li><a href="/contact-us">Contact Us</a></li>
-                <li><a href="/blogs">Blogs</a></li>
-                <li class="dropdown">
+                 <li class="dropdown">
                   <a href="javascript:void(0)" class="dropbtn toggle-dropdown">Lab Reports</a>
                   <div class="dropdown-content">
                     <a href="https://cdn.jsdelivr.net/gh/ifdanog/tpspure@main/Materials%20Safety%20Data%20Sheet%20(MSDS)%20-%20Talcum%20Powder.pdf" target="_blank">Materials Safety Data Sheet (MSDS) - Talcum Powder</a>
@@ -119,6 +116,8 @@ document.addEventListener("DOMContentLoaded", function () {
                     <a href="https://cdn.jsdelivr.net/gh/ifdanog/tpspure@main/ALHABTOOR%20RES.%20TRADING%20CO.%20L.L.C%20%20-%20ISO%2022000%20-%202025%20-%202026.pdf" target="_blank">Food Grade Certificate</a>
                   </div>
                 </li>
+                <li><a href="/contact-us">Contact Us</a></li>
+                <li><a href="/blogs">Blogs</a></li>
               </ul>
       `;
             const header = document.querySelector("header");
