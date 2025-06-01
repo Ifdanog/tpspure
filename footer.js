@@ -67,7 +67,7 @@ document.addEventListener("DOMContentLoaded", function () {
             <a href="https://finetalc.co.uk/products/pages/shipping-payment">Shipping and Payment Info</a> |
             <a href="https://finetalc.co.uk/products/pages/privacy-policy">Privacy Policy</a> |
             <a href="https://finetalc.co.uk/products/pages/returns">Return Policy</a> |
-            <a href="https://finetalc.co.uk/products/pages/terms">Terms & Conditions</a> |
+            <a href="https://finetalc.co.uk/products/pages/terms">Terms & Conditions</a>
         </div>
     `;
 
