@@ -7,6 +7,9 @@ document.addEventListener("DOMContentLoaded", function () {
             <div class="footer-section">
                     <img src="https://d2gt4h1eeousrn.cloudfront.net/110609312/header-fcHJMd/kU7asoo-600x600.webp" class="logo-footer" alt="Logo">
                     <p style="margin-bottom: 10px;">TPS Pure offers fine talcum powder. We provide all types of talcum powder ranging from food grade talc to pharmaceutical grades and cosmetics.</p>
+                    <p>TPS Fine Talc Limited, No1.Royal Exchange London EC3V 3DG, United Kingdom </p>
+                    <p><a href="tel:+4402080583570">+44 (0) 208 0583570</a></p>
+                    <p><a href="mailto:info@finetalc.co.uk">info@finetalc.co.uk</a></p>
             </div>
 
             <div class="footer-section">
@@ -22,12 +25,11 @@ document.addEventListener("DOMContentLoaded", function () {
                 <ul>
                     <li><a href="/contact-us">Contact us</a></li>
                     <li><a href="/contact-us">Become a Sales Partner</a></li>
-                    <li><a href="/downloads">Lab Reports</a></li>
                 </ul>
             </div>
 
                <div class="footer-section">
-                <h3>Downloads</h3>
+                <h3>LAB REPORTS</h3>
                 <ul>
                     <li><a href="https://cdn.jsdelivr.net/gh/ifdanog/tpspure@main/Materials%20Safety%20Data%20Sheet%20(MSDS)%20-%20Talcum%20Powder.pdf" target="_blank">Materials Safety Data Sheet (MSDS) - Talcum Powder</a></li>
                     <li><a href="https://cdn.jsdelivr.net/gh/ifdanog/tpspure@main/TPS%20Premium%20Talc%20Powder.pdf" target="_blank">TPS Premium Talc Powder</a></li>
@@ -156,7 +158,7 @@ document.addEventListener("DOMContentLoaded", function () {
         }
 
         .eco-certificates img {
-              width: 100%;
+              width: 85%;
           }
         
         .payment-methods img {
