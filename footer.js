@@ -15,6 +15,7 @@ document.addEventListener("DOMContentLoaded", function () {
             </div>
 
             <div class="footer-section">
+                <h3>QUICK LINKS</h3>
                 <ul>
                     <li><a href="/product">Products</a></li>
                     <li><a href="/about-us">About us</a></li>
