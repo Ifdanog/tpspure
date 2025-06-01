@@ -23,7 +23,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 <ul>
                     <li><a href="/product">Products</a></li>
                     <li><a href="/about-us">About us</a></li>
-                    <li><a href="/blogs">Blogs</a></li>
+                    <li><a href="/blogs">Our Blogs</a></li>
                 </ul>
             </div>
 
