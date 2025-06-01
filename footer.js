@@ -11,6 +11,7 @@ document.addEventListener("DOMContentLoaded", function () {
                     <p>London EC3V 3DG, United Kingdom</p>
                     <p><a href="tel:+4402080583570" style="color: blue;">02080583570</a></p>
                     <p><a href="mailto:info@finetalc.co.uk" style="color: blue;">info@finetalc.co.uk</a></p>
+                    <p><b>Company Reg No:</b></p>
             </div>
 
             <div class="footer-section">
