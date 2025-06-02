@@ -183,7 +183,6 @@ document.addEventListener("DOMContentLoaded", function () {
             height: 100vh;
             background-color: white;
             color: black;
-            overflow-y: auto;
             width: 100%;
             display: none;
             z-index: 9999;
@@ -192,16 +191,15 @@ document.addEventListener("DOMContentLoaded", function () {
         #nav-menu ul {
             list-style-type: none;
             padding: 0 20px;
-            height: 1100px;
         }
         #nav-menu ul li {
-            padding: 20px 0;
-              position: relative;
+            padding: 15px 0;
+            position: relative;
 
         }  
         #nav-menu ul li a {
             text-decoration: none;
-            font-size: 20px;
+            font-size: 15px;
             color: black;
         }  
 
