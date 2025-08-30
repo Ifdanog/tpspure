@@ -1,16 +1,6 @@
-const targetNode = document.body;
-console.log(targetNode);
-// Step 2: Configure the observer to watch for new child nodes
-const config = { childList: true, subtree: true };
-
-// Step 3: Define the callback function to handle mutations
-const callback = (mutationsList, observer) => {
-  for (const mutation of mutationsList) {
-    // Check if new nodes were added
-    if (mutation.type === 'childList' && mutation.addedNodes.length > 0) {
-      // Look for .product elements within the newly added nodes
+const observer = new MutationObserver(() => {
   const targets = document.querySelectorAll(".product-details__product-share");
-		console.log(targets);
+	console.log(targets);
         const html = `
       <div style="display:flex;justify-content:space-between;width:100%;gap:10px;">
         <div style="display:flex;flex-direction:column;gap:8px;flex:1;justify-content:space-between;">
@@ -77,12 +67,15 @@ const callback = (mutationsList, observer) => {
     `;
 
         // target.insertAdjacentHTML("afterend", html);
-        	 if (newProducts.length > 0) {
-        newProducts.forEach(product => {
-			            product.insertAdjacentHTML('beforebegin', html);
-            // Mark the element so we don't add the banner again
-            product.dataset.bannerAdded = true;
-			})
-		 }
-	}
-      };}
+  targets.forEach((target) => {
+    if (!target.dataset.added) { // Prevent duplicate logs
+		target.insertAdjacentHTML('beforebegin', html);
+		    }
+  });
+});
+
+
+observer.observe(document.body, {
+  childList: true,
+  subtree: true,
+});
