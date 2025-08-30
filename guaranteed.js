@@ -1,6 +1,7 @@
 document.addEventListener("DOMContentLoaded", function () {
   const target = document.querySelector(".product-details__product-share");
-
+console.log("Hello world");
+  console.log(target);
   if (target) {
     const html = `
       <div style="display:flex;justify-content:space-between;width:100%;gap:4px;">
