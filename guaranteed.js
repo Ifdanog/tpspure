@@ -1,12 +1,15 @@
- // document.addEventListener("DOMContentLoaded", () => {
- //        const targets = document.querySelectorAll(
- //          ".product-details__product-share"
- //        );
- //        console.log("Found:", targets);
- //        console.log("Hello");
-window.onload = () => {
+const targetNode = document.body;
+
+// Step 2: Configure the observer to watch for new child nodes
+const config = { childList: true, subtree: true };
+
+// Step 3: Define the callback function to handle mutations
+const callback = (mutationsList, observer) => {
+  for (const mutation of mutationsList) {
+    // Check if new nodes were added
+    if (mutation.type === 'childList' && mutation.addedNodes.length > 0) {
+      // Look for .product elements within the newly added nodes
   const targets = document.querySelectorAll(".product-details__product-share");
-  console.log("All targets:", targets);
         const html = `
       <div style="display:flex;justify-content:space-between;width:100%;gap:10px;">
         <div style="display:flex;flex-direction:column;gap:8px;flex:1;justify-content:space-between;">
@@ -73,7 +76,12 @@ window.onload = () => {
     `;
 
         // target.insertAdjacentHTML("afterend", html);
-        targets.forEach((target) => {
-          target.insertAdjacentHTML("afterend", html);
-        });
+        	 if (newProducts.length > 0) {
+        newProducts.forEach(product => {
+			            product.insertAdjacentHTML('beforebegin', html);
+            // Mark the element so we don't add the banner again
+            product.dataset.bannerAdded = true;
+			})
+		 }
+	}
       };
