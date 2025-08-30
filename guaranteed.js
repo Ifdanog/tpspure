@@ -1,8 +1,5 @@
 document.addEventListener("DOMContentLoaded", function () {
-  const target = document.querySelector(".product-details__product-share");
-console.log("Hello world");
-  console.log(target);
-  if (target) {
+  const targets = document.querySelectorAll(".product-details__product-share");
     const html = `
       <div style="display:flex;justify-content:space-between;width:100%;gap:4px;">
         <div style="display:flex;flex-direction:column;gap:8px;flex:1;justify-content:space-between;">
@@ -28,6 +25,7 @@ console.log("Hello world");
       </div>
     `;
 
-    target.insertAdjacentHTML("afterend", html);
-  }
+  targets.forEach((el) => {
+    el.insertAdjacentHTML("afterend", html);
+  });
 });
