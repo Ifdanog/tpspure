@@ -8,11 +8,11 @@
 }
 
 waitForElement(".product-details__product-share", (target) => {
-  console.log("Found:", target);
-});
+  console.log("Found:", target)
 
-document.addEventListener("DOMContentLoaded", function () {
-  const targets = document.querySelectorAll(".product-details__product-share");
+// document.addEventListener("DOMContentLoaded", function () {
+  // const targets = document.querySelectorAll(".product-details__product-share");
+ 
     const html = `
       <div style="display:flex;justify-content:space-between;width:100%;gap:4px;">
         <div style="display:flex;flex-direction:column;gap:8px;flex:1;justify-content:space-between;">
@@ -38,7 +38,9 @@ document.addEventListener("DOMContentLoaded", function () {
       </div>
     `;
 
-  targets.forEach((el) => {
+  target.forEach((el) => {
     el.insertAdjacentHTML("afterend", html);
+   console.log("worrrking");
   });
 });
+ });
