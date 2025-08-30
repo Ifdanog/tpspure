@@ -42,5 +42,4 @@ waitForElement(".product-details__product-share", (target) => {
     el.insertAdjacentHTML("afterend", html);
    console.log("worrrking");
   });
-});
  });
