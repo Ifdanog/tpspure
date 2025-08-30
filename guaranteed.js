@@ -38,8 +38,5 @@ waitForElement(".product-details__product-share", (target) => {
       </div>
     `;
 
-  target.forEach((el) => {
-    el.insertAdjacentHTML("afterend", html);
-   console.log("worrrking");
-  });
+      target.insertAdjacentHTML("afterend", html);
  });
