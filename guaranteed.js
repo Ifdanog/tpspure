@@ -1,5 +1,5 @@
 const targetNode = document.body;
-
+console.log(targetNode);
 // Step 2: Configure the observer to watch for new child nodes
 const config = { childList: true, subtree: true };
 
