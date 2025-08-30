@@ -13,6 +13,23 @@ document.addEventListener("DOMContentLoaded", () => {
             <!-- Secure Payments Icon -->
 <svg viewBox="0 0 25 25" width="25" height="25" fill="none" xmlns="http://www.w3.org/2000/svg" data-sentry-element="svg" data-sentry-source-file="SecurePayments.tsx" data-sentry-component="SecurePayments"><path d="M21.3491 13.3835V9.84456C21.3491 9.37526 21.1627 8.92518 20.8309 8.59334C20.499 8.26149 20.0489 8.07507 19.5797 8.07507H2.76949C2.30019 8.07507 1.85012 8.26149 1.51827 8.59334C1.18643 8.92518 1 9.37526 1 9.84456V22.231C1 22.7003 1.18643 23.1504 1.51827 23.4822C1.85012 23.8141 2.30019 24.0005 2.76949 24.0005H19.5797C20.0489 24.0005 20.499 23.8141 20.8309 23.4822C21.1627 23.1504 21.3491 22.7003 21.3491 22.231V17.8073M6.9101 3.65134L16.9431 1.03249C17.0559 1.00073 17.1739 0.992135 17.29 1.00723C17.4062 1.02233 17.5181 1.06081 17.6189 1.12034C17.7198 1.17987 17.8076 1.25923 17.8769 1.35361C17.9463 1.448 17.9958 1.55546 18.0225 1.66951L18.518 3.65134" stroke="#004aad" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" data-sentry-element="path" data-sentry-source-file="SecurePayments.tsx"></path><path d="M23.1186 13.3833H18.6949C18.2063 13.3833 17.8102 13.7794 17.8102 14.268V16.9223C17.8102 17.4109 18.2063 17.807 18.6949 17.807H23.1186C23.6073 17.807 24.0034 17.4109 24.0034 16.9223V14.268C24.0034 13.7794 23.6073 13.3833 23.1186 13.3833Z" stroke="#004aad" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" data-sentry-element="path"></path></svg>            Secure Payments
           </span>
+                    <span style="display:flex;align-items:center;font-size:14px;color:#333;gap:10px">
+          <svg role="img" aria-labelledby="fastTitle" width="36" height="28" viewBox="0 0 36 28" fill="none" xmlns="http://www.w3.org/2000/svg" style="vertical-align:middle;">
+    <title id="fastTitle">Fast delivery icon</title>
+    <g fill="currentColor">
+      <!-- truck body -->
+      <rect x="2" y="7" width="20" height="10" rx="1.2"></rect>
+      <!-- cabin -->
+      <rect x="20.5" y="9" width="9.5" height="8" rx="1"></rect>
+      <!-- wheels -->
+      <circle cx="8.5" cy="20.5" r="2.5" fill="currentColor"></circle>
+      <circle cx="24.5" cy="20.5" r="2.5" fill="currentColor"></circle>
+      <!-- speed lines -->
+      <path d="M0.8 9.2 H-0.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" transform="translate(6 -1) scale(1.8 1)"/>
+      <path d="M0.8 12.2 H-1" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" transform="translate(6 0) scale(1.6 1)"/>
+      <path d="M0.8 15.2 H-1.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" transform="translate(6 1) scale(1.4 1)"/>
+    </g>
+  </svg> Fast delivery </span>
         </div>
         <div style="display:flex;flex-direction:column;gap:8px;flex:0.8;justify-content:space-between;">
           <span style="display:flex;align-items:center;font-size:14px;color:#333;gap:10px">
@@ -22,6 +39,36 @@ document.addEventListener("DOMContentLoaded", () => {
           <span style="display:flex;align-items:center;font-size:14px;color:#333;gap:10px;">
             <!-- Returns Icon -->
 <svg role="img" width="20" height="20" viewBox="0 0 20 20" fill="#004aad" xmlns="http://www.w3.org/2000/svg" data-sentry-element="svg" data-sentry-component="Returns" data-sentry-source-file="Returns.tsx"><title>Return Product Arrow Icon</title><path fill-rule="evenodd" clip-rule="evenodd" d="M18 1H2C1.44772 1 1 1.44772 1 2V18C1 18.5523 1.44772 19 2 19H16V20H2C0.895431 20 0 19.1046 0 18V2C0 0.895431 0.895431 0 2 0H18C19.1046 0 20 0.895431 20 2V12H19V2C19 1.44772 18.5523 1 18 1ZM7 4.5C7 4.22386 7.22386 4 7.5 4H12.5C12.7761 4 13 4.22386 13 4.5C13 4.77614 12.7761 5 12.5 5H7.5C7.22386 5 7 4.77614 7 4.5ZM13.8535 11.8536C14.0488 11.6583 14.0488 11.3417 13.8535 11.1464C13.6582 10.9512 13.3417 10.9512 13.1464 11.1464L10.2928 14L13.1464 16.8536C13.3417 17.0488 13.6582 17.0488 13.8535 16.8536C14.0488 16.6583 14.0488 16.3417 13.8535 16.1464L12.2071 14.5H15.5C17.8223 14.5 19 15.8653 19 17V19.5C19 19.7761 19.2239 20 19.5 20C19.7761 20 20 19.7761 20 19.5V17C20 15.1347 18.1777 13.5 15.5 13.5H12.2071L13.8535 11.8536Z" data-sentry-element="path"></path></svg> 14-Day Returns </span>
+                 <span style="display:flex;align-items:center;font-size:14px;color:#333;gap:10px;">
+ <svg role="img" aria-labelledby="ukTitle" width="40" height="28" viewBox="0 0 40 28" fill="none" xmlns="http://www.w3.org/2000/svg" style="vertical-align:middle;">
+    <title id="ukTitle">Express UK delivery</title>
+    <!-- truck -->
+    <g fill="currentColor">
+      <rect x="2" y="6" width="22" height="11" rx="1.2"></rect>
+      <rect x="24" y="8" width="12" height="9" rx="1"></rect>
+      <circle cx="9" cy="20.5" r="2.5" fill="currentColor"></circle>
+      <circle cx="28" cy="20.5" r="2.5" fill="currentColor"></circle>
+    </g>
+
+    <!-- UK badge on trailer: simplified flag (blue background + red/white crosses) -->
+    <g transform="translate(24,8)">
+      <!-- badge background -->
+      <rect x="0" y="0" width="12" height="9" rx="1" fill="#012169"></rect>
+      <!-- white diagonals -->
+      <path d="M0 0 L12 9 M12 0 L0 9" stroke="#fff" stroke-width="1.6" stroke-linecap="square"></path>
+      <!-- red diagonals (narrow) -->
+      <path d="M0 0 L12 9 M12 0 L0 9" stroke="#C8102E" stroke-width="0.9" stroke-linecap="square"></path>
+      <!-- white cross -->
+      <rect x="4.5" y="0" width="3" height="9" fill="#fff"></rect>
+      <rect x="0" y="3" width="12" height="3" fill="#fff"></rect>
+      <!-- red cross -->
+      <rect x="5.4" y="0" width="1.2" height="9" fill="#C8102E"></rect>
+      <rect x="0" y="4.05" width="12" height="1.8" fill="#C8102E"></rect>
+    </g>
+
+    <!-- label text -->
+    <text x="0" y="7.5" fill="currentColor" font-size="11" font-family="sans-serif" style="display:none;">Express UK</text>
+  </svg> UK warehouse delivery </span>
         </div>
       </div>
     `;
