@@ -1,7 +1,18 @@
+ function waitForElement(selector, callback) {
+  const el = document.querySelector(selector);
+  if (el) {
+    callback(el);
+  } else {
+    setTimeout(() => waitForElement(selector, callback), 200);
+  }
+}
+
+waitForElement(".product-details__product-share", (target) => {
+  console.log("Found:", target);
+});
+
 document.addEventListener("DOMContentLoaded", function () {
   const targets = document.querySelectorAll(".product-details__product-share");
-  console.log("Hello")
-  console.log(targets)
     const html = `
       <div style="display:flex;justify-content:space-between;width:100%;gap:4px;">
         <div style="display:flex;flex-direction:column;gap:8px;flex:1;justify-content:space-between;">
