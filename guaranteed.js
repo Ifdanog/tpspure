@@ -1,10 +1,12 @@
-document.addEventListener("DOMContentLoaded", () => {
-  const targets = document.querySelectorAll(".product-details__product-share");
-  console.log("Found:", targets);
-   console.log("Hello");
+ document.addEventListener("DOMContentLoaded", () => {
+        const targets = document.querySelectorAll(
+          ".product-details__product-share"
+        );
+        console.log("Found:", targets);
+        console.log("Hello");
 
-    const html = `
-      <div style="display:flex;justify-content:space-between;width:100%;gap:4px;">
+        const html = `
+      <div style="display:flex;justify-content:space-between;width:100%;gap:10px;">
         <div style="display:flex;flex-direction:column;gap:8px;flex:1;justify-content:space-between;">
           <span style="display:flex;align-items:center;font-size:14px;color:#333;gap:10px">
             <!-- Truck Icon -->
@@ -15,23 +17,9 @@ document.addEventListener("DOMContentLoaded", () => {
 <svg viewBox="0 0 25 25" width="25" height="25" fill="none" xmlns="http://www.w3.org/2000/svg" data-sentry-element="svg" data-sentry-source-file="SecurePayments.tsx" data-sentry-component="SecurePayments"><path d="M21.3491 13.3835V9.84456C21.3491 9.37526 21.1627 8.92518 20.8309 8.59334C20.499 8.26149 20.0489 8.07507 19.5797 8.07507H2.76949C2.30019 8.07507 1.85012 8.26149 1.51827 8.59334C1.18643 8.92518 1 9.37526 1 9.84456V22.231C1 22.7003 1.18643 23.1504 1.51827 23.4822C1.85012 23.8141 2.30019 24.0005 2.76949 24.0005H19.5797C20.0489 24.0005 20.499 23.8141 20.8309 23.4822C21.1627 23.1504 21.3491 22.7003 21.3491 22.231V17.8073M6.9101 3.65134L16.9431 1.03249C17.0559 1.00073 17.1739 0.992135 17.29 1.00723C17.4062 1.02233 17.5181 1.06081 17.6189 1.12034C17.7198 1.17987 17.8076 1.25923 17.8769 1.35361C17.9463 1.448 17.9958 1.55546 18.0225 1.66951L18.518 3.65134" stroke="#004aad" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" data-sentry-element="path" data-sentry-source-file="SecurePayments.tsx"></path><path d="M23.1186 13.3833H18.6949C18.2063 13.3833 17.8102 13.7794 17.8102 14.268V16.9223C17.8102 17.4109 18.2063 17.807 18.6949 17.807H23.1186C23.6073 17.807 24.0034 17.4109 24.0034 16.9223V14.268C24.0034 13.7794 23.6073 13.3833 23.1186 13.3833Z" stroke="#004aad" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" data-sentry-element="path"></path></svg>            Secure Payments
           </span>
                     <span style="display:flex;align-items:center;font-size:14px;color:#333;gap:10px">
-          <svg role="img" aria-labelledby="fastTitle" width="36" height="28" viewBox="0 0 36 28" fill="none" xmlns="http://www.w3.org/2000/svg" style="vertical-align:middle;">
-    <title id="fastTitle">Fast delivery icon</title>
-    <g fill="currentColor">
-      <!-- truck body -->
-      <rect x="2" y="7" width="20" height="10" rx="1.2"></rect>
-      <!-- cabin -->
-      <rect x="20.5" y="9" width="9.5" height="8" rx="1"></rect>
-      <!-- wheels -->
-      <circle cx="8.5" cy="20.5" r="2.5" fill="currentColor"></circle>
-      <circle cx="24.5" cy="20.5" r="2.5" fill="currentColor"></circle>
-      <!-- speed lines -->
-      <path d="M0.8 9.2 H-0.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" transform="translate(6 -1) scale(1.8 1)"/>
-      <path d="M0.8 12.2 H-1" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" transform="translate(6 0) scale(1.6 1)"/>
-      <path d="M0.8 15.2 H-1.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" transform="translate(6 1) scale(1.4 1)"/>
-    </g>
-  </svg> Fast delivery </span>
-        </div>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="#004aad" height="25" width="25" version="1.1" id="Capa_1" viewBox="0 0 422.518 422.518" xml:space="preserve">
+<path d="M422.512,215.424c0-0.079-0.004-0.158-0.005-0.237c-0.116-5.295-4.368-9.514-9.727-9.514h-2.554l-39.443-76.258  c-1.664-3.22-4.983-5.225-8.647-5.226l-67.34-0.014l2.569-20.364c0.733-8.138-1.783-15.822-7.086-21.638  c-5.293-5.804-12.683-9.001-20.81-9.001h-209c-5.255,0-9.719,4.066-10.22,9.308l-2.095,16.778h119.078  c7.732,0,13.836,6.268,13.634,14c-0.203,7.732-6.635,14-14.367,14H126.78c0.007,0.02,0.014,0.04,0.021,0.059H10.163  c-5.468,0-10.017,4.432-10.16,9.9c-0.143,5.468,4.173,9.9,9.641,9.9H164.06c7.168,1.104,12.523,7.303,12.326,14.808  c-0.216,8.242-7.039,14.925-15.267,14.994H54.661c-5.523,0-10.117,4.477-10.262,10c-0.145,5.523,4.215,10,9.738,10h105.204  c7.273,1.013,12.735,7.262,12.537,14.84c-0.217,8.284-7.109,15-15.393,15H35.792v0.011H25.651c-5.523,0-10.117,4.477-10.262,10  c-0.145,5.523,4.214,10,9.738,10h8.752l-3.423,35.818c-0.734,8.137,1.782,15.821,7.086,21.637c5.292,5.805,12.683,9.001,20.81,9.001  h7.55C69.5,333.8,87.3,349.345,109.073,349.345c21.773,0,40.387-15.545,45.06-36.118h94.219c7.618,0,14.83-2.913,20.486-7.682  c5.172,4.964,12.028,7.682,19.514,7.682h1.55c3.597,20.573,21.397,36.118,43.171,36.118c21.773,0,40.387-15.545,45.06-36.118h6.219  c16.201,0,30.569-13.171,32.029-29.36l6.094-67.506c0.008-0.091,0.004-0.181,0.01-0.273c0.01-0.139,0.029-0.275,0.033-0.415  C422.52,215.589,422.512,215.508,422.512,215.424z M109.597,329.345c-13.785,0-24.707-11.214-24.346-24.999  c0.361-13.786,11.87-25.001,25.655-25.001c13.785,0,24.706,11.215,24.345,25.001C134.89,318.131,123.382,329.345,109.597,329.345z   M333.597,329.345c-13.785,0-24.706-11.214-24.346-24.999c0.361-13.786,11.87-25.001,25.655-25.001  c13.785,0,24.707,11.215,24.345,25.001C358.89,318.131,347.382,329.345,333.597,329.345z M396.457,282.588  c-0.52,5.767-5.823,10.639-11.58,10.639h-6.727c-4.454-19.453-21.744-33.882-42.721-33.882c-20.977,0-39.022,14.429-44.494,33.882  h-2.059c-2.542,0-4.81-0.953-6.389-2.685c-1.589-1.742-2.337-4.113-2.106-6.676l12.609-139.691l28.959,0.006l-4.59,50.852  c-0.735,8.137,1.78,15.821,7.083,21.637c5.292,5.806,12.685,9.004,20.813,9.004h56.338L396.457,282.588z"/>
+</svg> Fast Delivery </span>        </div>
         <div style="display:flex;flex-direction:column;gap:8px;flex:0.8;justify-content:space-between;">
           <span style="display:flex;align-items:center;font-size:14px;color:#333;gap:10px">
             <!-- Headphones Icon -->
@@ -41,41 +29,49 @@ document.addEventListener("DOMContentLoaded", () => {
             <!-- Returns Icon -->
 <svg role="img" width="20" height="20" viewBox="0 0 20 20" fill="#004aad" xmlns="http://www.w3.org/2000/svg" data-sentry-element="svg" data-sentry-component="Returns" data-sentry-source-file="Returns.tsx"><title>Return Product Arrow Icon</title><path fill-rule="evenodd" clip-rule="evenodd" d="M18 1H2C1.44772 1 1 1.44772 1 2V18C1 18.5523 1.44772 19 2 19H16V20H2C0.895431 20 0 19.1046 0 18V2C0 0.895431 0.895431 0 2 0H18C19.1046 0 20 0.895431 20 2V12H19V2C19 1.44772 18.5523 1 18 1ZM7 4.5C7 4.22386 7.22386 4 7.5 4H12.5C12.7761 4 13 4.22386 13 4.5C13 4.77614 12.7761 5 12.5 5H7.5C7.22386 5 7 4.77614 7 4.5ZM13.8535 11.8536C14.0488 11.6583 14.0488 11.3417 13.8535 11.1464C13.6582 10.9512 13.3417 10.9512 13.1464 11.1464L10.2928 14L13.1464 16.8536C13.3417 17.0488 13.6582 17.0488 13.8535 16.8536C14.0488 16.6583 14.0488 16.3417 13.8535 16.1464L12.2071 14.5H15.5C17.8223 14.5 19 15.8653 19 17V19.5C19 19.7761 19.2239 20 19.5 20C19.7761 20 20 19.7761 20 19.5V17C20 15.1347 18.1777 13.5 15.5 13.5H12.2071L13.8535 11.8536Z" data-sentry-element="path"></path></svg> 14-Day Returns </span>
                  <span style="display:flex;align-items:center;font-size:14px;color:#333;gap:10px;">
- <svg role="img" aria-labelledby="ukTitle" width="40" height="28" viewBox="0 0 40 28" fill="none" xmlns="http://www.w3.org/2000/svg" style="vertical-align:middle;">
-    <title id="ukTitle">Express UK delivery</title>
-    <!-- truck -->
-    <g fill="currentColor">
-      <rect x="2" y="6" width="22" height="11" rx="1.2"></rect>
-      <rect x="24" y="8" width="12" height="9" rx="1"></rect>
-      <circle cx="9" cy="20.5" r="2.5" fill="currentColor"></circle>
-      <circle cx="28" cy="20.5" r="2.5" fill="currentColor"></circle>
-    </g>
-
-    <!-- UK badge on trailer: simplified flag (blue background + red/white crosses) -->
-    <g transform="translate(24,8)">
-      <!-- badge background -->
-      <rect x="0" y="0" width="12" height="9" rx="1" fill="#012169"></rect>
-      <!-- white diagonals -->
-      <path d="M0 0 L12 9 M12 0 L0 9" stroke="#fff" stroke-width="1.6" stroke-linecap="square"></path>
-      <!-- red diagonals (narrow) -->
-      <path d="M0 0 L12 9 M12 0 L0 9" stroke="#C8102E" stroke-width="0.9" stroke-linecap="square"></path>
-      <!-- white cross -->
-      <rect x="4.5" y="0" width="3" height="9" fill="#fff"></rect>
-      <rect x="0" y="3" width="12" height="3" fill="#fff"></rect>
-      <!-- red cross -->
-      <rect x="5.4" y="0" width="1.2" height="9" fill="#C8102E"></rect>
-      <rect x="0" y="4.05" width="12" height="1.8" fill="#C8102E"></rect>
-    </g>
-
-    <!-- label text -->
-    <text x="0" y="7.5" fill="currentColor" font-size="11" font-family="sans-serif" style="display:none;">Express UK</text>
-  </svg> UK warehouse delivery </span>
+ <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="#004aad" height="25" width="25" version="1.1" id="Layer_1" viewBox="0 0 512 512" xml:space="preserve">
+<g>
+	<g>
+		<path d="M499.933,163.855L260.501,1.383c-2.716-1.845-6.284-1.844-9.002,0L12.067,163.855c-2.199,1.492-3.516,3.976-3.516,6.634    v333.495c0,4.427,3.589,8.017,8.017,8.017h478.864c4.428,0,8.017-3.589,8.017-8.017V170.489    C503.449,167.831,502.133,165.347,499.933,163.855z M196.676,495.967h-86.58v-86.58h18.171v43.29c0,4.427,3.589,8.017,8.017,8.017    h34.205c4.427,0,8.017-3.589,8.017-8.017v-43.29h18.171V495.967z M92.994,205.228v-18.171h326.013v18.171H92.994z M144.301,444.66    v-35.273h18.171v35.273H144.301z M196.676,393.353h-26.188h-34.205h-26.188v-86.58h18.171v43.29c0,4.427,3.589,8.017,8.017,8.017    h34.205c4.427,0,8.017-3.589,8.017-8.017v-43.29h18.171V393.353z M144.301,342.046v-35.273h18.171v35.273H144.301z     M299.29,495.967h-86.58v-86.58h18.171v43.29c0,4.427,3.589,8.017,8.017,8.017h34.205c4.428,0,8.017-3.589,8.017-8.017v-43.29    h18.171V495.967z M246.914,444.66v-35.273h18.171v35.273H246.914z M487.416,495.967h-69.478V324.409    c0-4.427-3.588-8.017-8.017-8.017c-4.428,0-8.017,3.589-8.017,8.017v171.557h-86.58V401.37c0-4.427-3.588-8.017-8.017-8.017    H212.71v-94.597c0-4.427-3.589-8.017-8.017-8.017h-94.597v-69.478h291.808v68.944c0,4.427,3.588,8.017,8.017,8.017    c4.428,0,8.017-3.589,8.017-8.017v-68.944h9.086c4.428,0,8.017-3.589,8.017-8.017V179.04c0-4.427-3.588-8.017-8.017-8.017H84.977    c-4.427,0-8.017,3.589-8.017,8.017v34.205c0,4.427,3.589,8.017,8.017,8.017h9.086v274.706H24.585V174.737L256,17.705    l231.415,157.032V495.967z"/>
+	</g>
+</g>
+<g>
+	<g>
+		<path d="M290.205,68.409h-68.409c-4.427,0-8.017,3.589-8.017,8.017s3.589,8.017,8.017,8.017h68.409    c4.428,0,8.017-3.589,8.017-8.017S294.633,68.409,290.205,68.409z"/>
+	</g>
+</g>
+<g>
+	<g>
+		<path d="M290.205,102.614h-68.409c-4.427,0-8.017,3.589-8.017,8.017s3.589,8.017,8.017,8.017h68.409    c4.428,0,8.017-3.589,8.017-8.017S294.633,102.614,290.205,102.614z"/>
+	</g>
+</g>
+<g>
+	<g>
+		<path d="M290.205,136.818h-68.409c-4.427,0-8.017,3.589-8.017,8.017s3.589,8.017,8.017,8.017h68.409    c4.428,0,8.017-3.589,8.017-8.017S294.633,136.818,290.205,136.818z"/>
+	</g>
+</g>
+<g>
+	<g>
+		<path d="M170.489,367.7h-34.205c-4.427,0-8.017,3.589-8.017,8.017c0,4.427,3.589,8.017,8.017,8.017h34.205    c4.427,0,8.017-3.589,8.017-8.017C178.505,371.289,174.916,367.7,170.489,367.7z"/>
+	</g>
+</g>
+<g>
+	<g>
+		<path d="M170.489,470.313h-34.205c-4.427,0-8.017,3.589-8.017,8.017c0,4.427,3.589,8.017,8.017,8.017h34.205    c4.427,0,8.017-3.589,8.017-8.017C178.505,473.903,174.916,470.313,170.489,470.313z"/>
+	</g>
+</g>
+<g>
+	<g>
+		<path d="M273.102,470.313h-34.205c-4.427,0-8.017,3.589-8.017,8.017c0,4.427,3.589,8.017,8.017,8.017h34.205    c4.428,0,8.017-3.589,8.017-8.017C281.119,473.903,277.531,470.313,273.102,470.313z"/>
+	</g>
+</g>
+</svg> UK warehouse delivery </span>
         </div>
       </div>
     `;
 
-      // target.insertAdjacentHTML("afterend", html);
-   targets.forEach((target) => {
-    target.insertAdjacentHTML("afterend", html);
- });
- });
+        // target.insertAdjacentHTML("afterend", html);
+        targets.forEach((target) => {
+          target.insertAdjacentHTML("afterend", html);
+        });
+      });
