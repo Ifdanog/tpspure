@@ -1,6 +1,7 @@
-document.querySelectorAll(".product-details__product-share").forEach(el => {
-  el.innerHTML = `<div class="my-new-content">Your new content here</div>`;
-});
+document.querySelector(".product-details__product-share").innerHTML = `
+  <div class="my-new-content">Your new content here</div>
+`;
+console.log("working");
 
 
 // const observer = new MutationObserver(() => {
