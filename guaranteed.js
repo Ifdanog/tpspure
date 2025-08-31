@@ -98,6 +98,10 @@
  * Adds a guaranteed section under .product-details-module__content
  * Following best practices: error handling, performance, accessibility, and maintainability
  */
+/**
+ * Adds a guaranteed section under .product-details-module__content
+ * Following best practices: error handling, performance, accessibility, and maintainability
+ */
 
 class GuaranteedSectionManager {
   constructor(options = {}) {
@@ -124,6 +128,9 @@ class GuaranteedSectionManager {
     }
 
     try {
+      // First, let's debug what elements are available
+      this.debugAvailableElements();
+      
       await this.waitForTarget();
       this.injectSection();
       this.setupMutationObserver();
@@ -131,8 +138,106 @@ class GuaranteedSectionManager {
       console.log('Guaranteed section successfully initialized');
     } catch (error) {
       console.error('Failed to initialize guaranteed section:', error);
-      throw error;
+      console.log('Attempting fallback initialization...');
+      this.tryFallbackInit();
     }
+  }
+
+  /**
+   * Debug helper to show available elements
+   */
+  debugAvailableElements() {
+    console.log('🔍 Debugging available elements:');
+    
+    // Check for common product detail selectors
+    const commonSelectors = [
+      '.product-details-module__content',
+      '.product-details',
+      '.product-info',
+      '.product-content',
+      '[class*="product-detail"]',
+      '[class*="product-info"]',
+      '[class*="product-content"]',
+      '.content',
+      '.main-content',
+      '#product-details',
+      '#product-info'
+    ];
+
+    const foundElements = [];
+    
+    commonSelectors.forEach(selector => {
+      try {
+        const elements = document.querySelectorAll(selector);
+        if (elements.length > 0) {
+          foundElements.push({ selector, count: elements.length });
+        }
+      } catch (e) {
+        // Invalid selector, skip
+      }
+    });
+
+    if (foundElements.length > 0) {
+      console.log('✅ Found potential target elements:', foundElements);
+    } else {
+      console.log('❌ No common product detail elements found');
+      console.log('📋 All elements with "product" in class name:');
+      const allProductElements = document.querySelectorAll('[class*="product"]');
+      Array.from(allProductElements).forEach((el, index) => {
+        if (index < 10) { // Limit output
+          console.log(`   ${el.tagName}.${el.className}`);
+        }
+      });
+    }
+  }
+
+  /**
+   * Try fallback initialization with alternative selectors
+   */
+  tryFallbackInit() {
+    const fallbackSelectors = [
+      '.product-details',
+      '.product-info',
+      '.product-content',
+      '[class*="product-detail"]',
+      '[class*="product-info"]',
+      '.content',
+      '.main-content',
+      'main',
+      'body'
+    ];
+
+    for (const selector of fallbackSelectors) {
+      try {
+        const element = document.querySelector(selector);
+        if (element) {
+          console.log(`✅ Using fallback selector: ${selector}`);
+          this.options.targetSelector = selector;
+          this.injectSection();
+          this.setupMutationObserver();
+          this.isInitialized = true;
+          return true;
+        }
+      } catch (e) {
+        continue;
+      }
+    }
+
+    console.warn('⚠️ Could not find any suitable target element. Creating section at end of body.');
+    this.injectAtBodyEnd();
+    return false;
+  }
+
+  /**
+   * Inject section at the end of body as last resort
+   */
+  injectAtBodyEnd() {
+    const section = this.createGuaranteedSection();
+    document.body.appendChild(section);
+    this.setupMutationObserver();
+    this.isInitialized = true;
+    this.dispatchSectionEvent('guaranteed-section:added', section);
+    console.log('Guaranteed section added to end of body');
   }
 
   /**
@@ -146,11 +251,14 @@ class GuaranteedSectionManager {
         const target = document.querySelector(this.options.targetSelector);
         
         if (target) {
+          console.log(`✅ Target element found: ${this.options.targetSelector}`);
           resolve(target);
           return;
         }
         
         attempts++;
+        console.log(`🔍 Attempt ${attempts}/${this.options.retryAttempts}: Looking for ${this.options.targetSelector}`);
+        
         if (attempts >= this.options.retryAttempts) {
           reject(new Error(`Target element "${this.options.targetSelector}" not found after ${attempts} attempts`));
           return;
@@ -203,7 +311,7 @@ class GuaranteedSectionManager {
     section.setAttribute('aria-label', 'Product Guarantee Information');
     
     section.innerHTML = `
-       <div class="trust-banner" style="display:flex;justify-content:space-between;width:100%;gap:10px;margin-bottom:15px;padding:15px;border:1px solid #e0e0e0;border-radius:8px;background-color:#f9f9f9;">
+      <div class="trust-banner" style="display:flex;justify-content:space-between;width:100%;gap:10px;margin-bottom:15px;padding:15px;border:1px solid #e0e0e0;border-radius:8px;background-color:#f9f9f9;">
           <div style="display:flex;flex-direction:column;gap:8px;flex:1;justify-content:space-between;">
             <span style="display:flex;align-items:center;font-size:14px;color:#333;gap:10px">
               <!-- Truck Icon -->
@@ -261,12 +369,9 @@ class GuaranteedSectionManager {
           </div>
         </div>
     `;
+    
     return section;
   }
-
-  /**
-   * Inject CSS styles for the guaranteed section
-   */
 
   /**
    * Setup mutation observer to handle dynamic content changes
@@ -359,13 +464,21 @@ const guaranteedManager = new GuaranteedSectionManager({
   // retryDelay: 500
 });
 
-// Initialize when DOM is ready
+// Initialize when DOM is ready with better error handling
+const initializeGuaranteedSection = () => {
+  guaranteedManager.init()
+    .then(() => {
+      console.log('✅ Guaranteed section initialization completed successfully');
+    })
+    .catch((error) => {
+      console.warn('⚠️ Primary initialization failed, but fallback may have worked:', error.message);
+    });
+};
+
 if (document.readyState === 'loading') {
-  document.addEventListener('DOMContentLoaded', () => {
-    guaranteedManager.init().catch(console.error);
-  });
+  document.addEventListener('DOMContentLoaded', initializeGuaranteedSection);
 } else {
-  guaranteedManager.init().catch(console.error);
+  initializeGuaranteedSection();
 }
 
 // Event listeners for custom events
