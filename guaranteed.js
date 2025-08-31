@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", () => {
   console.log("working");
   const html = `<div class="trust-banner" style="display:flex;flex-direction:row;justify-content:space-between;width:100%;gap:10px;margin-bottom:15px;">
-          <div style="display:grid;gap:10px;flex:1;justify-content:space-between;">
+          <div style="display:grid;grid-template-colums:repeat(2,1fr);gap:10px;flex:1;justify-content:space-between;">
             <span style="display:flex;align-items:center;font-size:14px;color:#333;gap:10px">
               <!-- Truck Icon -->
               <svg role="img" width="25" height="25" viewBox="0 0 63 50" fill="#004aad" xmlns="http://www.w3.org/2000/svg" aria-label="Delivery Truck">
