@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", () => {
   if (target) {
     target.insertAdjacentHTML(
       "afterbegin", // places it at the very top inside the element
-      `<div class="trust-banner" style="display:flex;justify-content:space-between;width:100%;gap:10px;margin-bottom:15px;padding:15px;border:1px solid #e0e0e0;border-radius:8px;background-color:#f9f9f9;">
+      `<div class="trust-banner" style="display:flex;justify-content:space-between;width:100%;gap:10px;margin-bottom:15px;">
           <div style="display:flex;flex-direction:column;gap:8px;flex:1;justify-content:space-between;">
             <span style="display:flex;align-items:center;font-size:14px;color:#333;gap:10px">
               <!-- Truck Icon -->
@@ -71,7 +71,7 @@ document.addEventListener("DOMContentLoaded", () => {
       if (dynamicEl) {
         dynamicEl.insertAdjacentHTML(
           "afterbegin",
-          `<div class="trust-banner" style="display:flex;justify-content:space-between;width:100%;gap:10px;margin-bottom:15px;padding:15px;border:1px solid #e0e0e0;border-radius:8px;background-color:#f9f9f9;">
+          `<div class="trust-banner" style="display:flex;justify-content:space-between;width:100%;gap:10px;margin-bottom:15px;">
           <div style="display:flex;flex-direction:column;gap:8px;flex:1;justify-content:space-between;">
             <span style="display:flex;align-items:center;font-size:14px;color:#333;gap:10px">
               <!-- Truck Icon -->
