@@ -70,12 +70,12 @@ const observer = new MutationObserver(() => {
   targets.forEach((target) => {
     if (!target.dataset.added) { // Prevent duplicate logs
 		target.insertAdjacentHTML('beforebegin', html);
-		    }
+	}
   });
 });
 
 
-observer.observe(document.querySelector(".product"), {
+observer.observe(document.querySelector(".ec-store__product-page"), {
   childList: true,
   subtree: true,
 });
