@@ -1,29 +1,30 @@
 document.addEventListener("DOMContentLoaded", () => {
   console.log("working");
 
-  // Check if the element exists after DOM is loaded
-  const el = document.querySelector(".product-details__product-share");
-  if (el) {
-    el.innerHTML = `
-      <div class="my-new-content">Your new content here</div>
-    `;
+  const target = document.querySelector(".product-details__product-share");
+  if (target) {
+    target.insertAdjacentHTML(
+      "afterbegin", // places it at the very top inside the element
+      `<div class="my-new-content">Your new content here</div>`
+    );
   } else {
     console.log("Element not found yet, waiting...");
 
-    // Use MutationObserver to catch when it gets added dynamically
     const observer = new MutationObserver(() => {
       const dynamicEl = document.querySelector(".product-details__product-share");
       if (dynamicEl) {
-        dynamicEl.innerHTML = `
-          <div class="my-new-content">Your new content here</div>
-        `;
-        observer.disconnect(); // stop watching once done
+        dynamicEl.insertAdjacentHTML(
+          "afterbegin",
+          `<div class="my-new-content">Your new content here</div>`
+        );
+        observer.disconnect();
       }
     });
 
     observer.observe(document.body, { childList: true, subtree: true });
   }
 });
+
 
 
 
