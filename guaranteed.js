@@ -74,13 +74,12 @@ document.addEventListener("DOMContentLoaded", () => {
         <img class="payment-icon apple-pay" src="https://1000logos.net/wp-content/uploads/2023/03/Apple-Pay-logo.png" alt="Apple Pay" style="height:30px;width:auto;object-fit:contain;">
         <img class="payment-icon amex" src="https://cdn.shopify.com/s/files/1/0851/8464/3409/files/htgfhty.png?v=1730930330" alt="American Express" style="height:30px;width:auto;object-fit:contain;">
         <img class="payment-icon mastercard" src="https://cdn.shopify.com/s/files/1/0851/8464/3409/files/fdfd.png?v=1730930330" alt="Mastercard" style="height:30px;width:auto;object-fit:contain;">
-        <img class="payment-icon paypal" src="https://cdn.shopify.com/s/files/1/0851/8464/3409/files/fdfde.png?v=1730930331" alt="PayPal" style="height:30px;width:auto;object-fit:contain;">
-        <img class="payment-icon visa" src="https://cdn.shopify.com/s/files/1/0851/8464/3409/files/454635465.png?v=1730930331" alt="Visa" style="height:30px;width:auto;object-fit:contain;">
       </div>
 
-      <div class="payment-row bottom-row" 
-           style="display:flex;justify-content:center;align-items:center;gap:20px;padding:0;" 
+      <div class="payment-row bottom-row" style="display:flex;justify-content:center;align-items:center;gap:20px;padding:0;" 
            bis_skin_checked="1">
+           <img class="payment-icon paypal" src="https://cdn.shopify.com/s/files/1/0851/8464/3409/files/fdfde.png?v=1730930331" alt="PayPal" style="height:30px;width:auto;object-fit:contain;">
+        <img class="payment-icon visa" src="https://cdn.shopify.com/s/files/1/0851/8464/3409/files/454635465.png?v=1730930331" alt="Visa" style="height:30px;width:auto;object-fit:contain;">
         <img class="payment-icon google-pay" src="https://imgs.search.brave.com/aN2wDK8vh-Oydf2oPTZEeb6jAGfkwXhA45B_CEyZTYI/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9wYXku/Z29vZ2xlLmNvbS9h/Ym91dC9zdGF0aWNf/a2NzL2ltYWdlcy9s/b2dvcy9nb29nbGUt/cGF5LWxvZ28uc3Zn" alt="Google Pay" style="height:30px;width:auto;object-fit:contain;">
       </div>
     </div>
