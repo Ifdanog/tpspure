@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", () => {
   console.log("working");
   const html = `<div class="trust-banner" style="display:flex;flex-direction:row;justify-content:space-between;width:100%;gap:10px;margin-bottom:15px;">
-          <div style="display:grid;grid-template-columns:repeat(2,1fr);gap:8px;flex:1;justify-content:space-between;">
+          <div style="display:grid;gap:10px;flex:1;justify-content:space-between;">
             <span style="display:flex;align-items:center;font-size:14px;color:#333;gap:10px">
               <!-- Truck Icon -->
               <svg role="img" width="25" height="25" viewBox="0 0 63 50" fill="#004aad" xmlns="http://www.w3.org/2000/svg" aria-label="Delivery Truck">
@@ -13,7 +13,7 @@ document.addEventListener("DOMContentLoaded", () => {
             
             <span style="display:flex;align-items:center;font-size:14px;color:#333;gap:10px">
               <!-- Secure Payments Icon -->
-              <svg viewBox="0 0 25 25" width="20" height="20" fill="none" xmlns="http://www.w3.org/2000/svg" aria-label="Secure Payments">
+              <svg viewBox="0 0 25 25" width="25" height="22" fill="none" xmlns="http://www.w3.org/2000/svg" aria-label="Secure Payments">
                 <path d="M21.3491 13.3835V9.84456C21.3491 9.37526 21.1627 8.92518 20.8309 8.59334C20.499 8.26149 20.0489 8.07507 19.5797 8.07507H2.76949C2.30019 8.07507 1.85012 8.26149 1.51827 8.59334C1.18643 8.92518 1 9.37526 1 9.84456V22.231C1 22.7003 1.18643 23.1504 1.51827 23.4822C1.85012 23.8141 2.30019 24.0005 2.76949 24.0005H19.5797C20.0489 24.0005 20.499 23.8141 20.8309 23.4822C21.1627 23.1504 21.3491 22.7003 21.3491 22.231V17.8073M6.9101 3.65134L16.9431 1.03249C17.0559 1.00073 17.1739 0.992135 17.29 1.00723C17.4062 1.02233 17.5181 1.06081 17.6189 1.12034C17.7198 1.17987 17.8076 1.25923 17.8769 1.35361C17.9463 1.448 17.9958 1.55546 18.0225 1.66951L18.518 3.65134" stroke="#004aad" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
                 <path d="M23.1186 13.3833H18.6949C18.2063 13.3833 17.8102 13.7794 17.8102 14.268V16.9223C17.8102 17.4109 18.2063 17.807 18.6949 17.807H23.1186C23.6073 17.807 24.0034 17.4109 24.0034 16.9223V14.268C24.0034 13.7794 23.6073 13.3833 23.1186 13.3833Z" stroke="#004aad" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
               </svg>
@@ -29,7 +29,7 @@ document.addEventListener("DOMContentLoaded", () => {
             </span>
             <span style="display:flex;align-items:center;font-size:14px;color:#333;gap:10px">
               <!-- Headphones Icon -->
-              <svg role="img" width="20" height="20" viewBox="0 0 476 476" fill="#004aad" xmlns="http://www.w3.org/2000/svg" aria-label="24/7 Support">
+              <svg role="img" width="25" height="20" viewBox="0 0 476 476" fill="#004aad" xmlns="http://www.w3.org/2000/svg" aria-label="24/7 Support">
                 <title>Customer Support Icon</title>
                 <g><path d="M400.85,181v-18.3c0-43.8-15.5-84.5-43.6-114.7c-28.8-31-68.4-48-111.6-48h-15.1c-43.2,0-82.8,17-111.6,48c-28.1,30.2-43.6,70.9-43.6,114.7V181c-34.1,2.3-61.2,30.7-61.2,65.4V275c0,36.1,29.4,65.5,65.5,65.5h36.9c6.6,0,12-5.4,12-12V192.8c0-6.6-5.4-12-12-12h-17.2v-18.1c0-79.1,56.4-138.7,131.1-138.7h15.1c74.8,0,131.1,59.6,131.1,138.7v18.1h-17.2c-6.6,0-12,5.4-12,12v135.6c0,6.6,5.4,12,12,12h16.8c-4.9,62.6-48,77.1-68,80.4c-5.5-16.9-21.4-29.1-40.1-29.1h-30c-23.2,0-42.1,18.9-42.1,42.1s18.9,42.2,42.1,42.2h30.1c19.4,0,35.7-13.2,40.6-31c9.8-1.4,25.3-4.9,40.7-13.9c21.7-12.7,47.4-38.6,50.8-90.8c34.3-2.1,61.5-30.6,61.5-65.4v-28.6C461.95,211.7,434.95,183.2,400.85,181z M104.75,316.4h-24.9c-22.9,0-41.5-18.6-41.5-41.5v-28.6c0-22.9,18.6-41.5,41.5-41.5h24.9V316.4z M268.25,452h-30.1c-10,0-18.1-8.1-18.1-18.1s8.1-18.1,18.1-18.1h30.1c10,0,18.1,8.1,18.1,18.1S278.25,452,268.25,452z M437.95,274.9c0,22.9-18.6,41.5-41.5,41.5h-24.9V204.8h24.9c22.9,0,41.5,18.6,41.5,41.5V274.9z"/></g>
               </svg>
@@ -38,7 +38,7 @@ document.addEventListener("DOMContentLoaded", () => {
             
             <span style="display:flex;align-items:center;font-size:14px;color:#333;gap:10px;">
               <!-- Returns Icon -->
-              <svg role="img" width="15" height="15" viewBox="0 0 15 15" fill="#004aad" xmlns="http://www.w3.org/2000/svg" aria-label="Returns Policy">
+              <svg role="img" width="25" height="20" viewBox="0 0 20 20" fill="#004aad" xmlns="http://www.w3.org/2000/svg" aria-label="Returns Policy">
                 <title>Return Product Arrow Icon</title>
                 <path fill-rule="evenodd" clip-rule="evenodd" d="M18 1H2C1.44772 1 1 1.44772 1 2V18C1 18.5523 1.44772 19 2 19H16V20H2C0.895431 20 0 19.1046 0 18V2C0 0.895431 0.895431 0 2 0H18C19.1046 0 20 0.895431 20 2V12H19V2C19 1.44772 18.5523 1 18 1ZM7 4.5C7 4.22386 7.22386 4 7.5 4H12.5C12.7761 4 13 4.22386 13 4.5C13 4.77614 12.7761 5 12.5 5H7.5C7.22386 5 7 4.77614 7 4.5ZM13.8535 11.8536C14.0488 11.6583 14.0488 11.3417 13.8535 11.1464C13.6582 10.9512 13.3417 10.9512 13.1464 11.1464L10.2928 14L13.1464 16.8536C13.3417 17.0488 13.6582 17.0488 13.8535 16.8536C14.0488 16.6583 14.0488 16.3417 13.8535 16.1464L12.2071 14.5H15.5C17.8223 14.5 19 15.8653 19 17V19.5C19 19.7761 19.2239 20 19.5 20C19.7761 20 20 19.7761 20 19.5V17C20 15.1347 18.1777 13.5 15.5 13.5H12.2071L13.8535 11.8536Z"/>
               </svg>
@@ -47,7 +47,7 @@ document.addEventListener("DOMContentLoaded", () => {
             
             <span style="display:flex;align-items:center;font-size:14px;color:#333;gap:10px;">
               <!-- Warehouse Icon -->
-              <svg xmlns="http://www.w3.org/2000/svg" fill="#004aad" height="20" width="20" viewBox="0 0 512 512" aria-label="UK Warehouse">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="#004aad" height="20" width="25" viewBox="0 0 512 512" aria-label="UK Warehouse">
                 <g><g><path d="M499.933,163.855L260.501,1.383c-2.716-1.845-6.284-1.844-9.002,0L12.067,163.855c-2.199,1.492-3.516,3.976-3.516,6.634v333.495c0,4.427,3.589,8.017,8.017,8.017h478.864c4.428,0,8.017-3.589,8.017-8.017V170.489C503.449,167.831,502.133,165.347,499.933,163.855z M196.676,495.967h-86.58v-86.58h18.171v43.29c0,4.427,3.589,8.017,8.017,8.017h34.205c4.427,0,8.017-3.589,8.017-8.017v-43.29h18.171V495.967z M92.994,205.228v-18.171h326.013v18.171H92.994z M144.301,444.66v-35.273h18.171v35.273H144.301z M196.676,393.353h-26.188h-34.205h-26.188v-86.58h18.171v43.29c0,4.427,3.589,8.017,8.017,8.017h34.205c4.427,0,8.017-3.589,8.017-8.017v-43.29h18.171V393.353z M144.301,342.046v-35.273h18.171v35.273H144.301z M299.29,495.967h-86.58v-86.58h18.171v43.29c0,4.427,3.589,8.017,8.017,8.017h34.205c4.428,0,8.017-3.589,8.017-8.017v-43.29h18.171V495.967z M246.914,444.66v-35.273h18.171v35.273H246.914z M487.416,495.967h-69.478V324.409c0-4.427-3.588-8.017-8.017-8.017c-4.428,0-8.017,3.589-8.017,8.017v171.557h-86.58V401.37c0-4.427-3.588-8.017-8.017-8.017H212.71v-94.597c0-4.427-3.589-8.017-8.017-8.017h-94.597v-69.478h291.808v68.944c0,4.427,3.588,8.017,8.017,8.017c4.428,0,8.017-3.589,8.017-8.017v-68.944h9.086c4.428,0,8.017-3.589,8.017-8.017V179.04c0-4.427-3.588-8.017-8.017-8.017H84.977c-4.427,0-8.017,3.589-8.017,8.017v34.205c0,4.427,3.589,8.017,8.017,8.017h9.086v274.706H24.585V174.737L256,17.705l231.415,157.032V495.967z"/></g></g>
               </svg>
              <strong style="line-height:16px;">UK Warehouse Delivery</strong>
@@ -82,8 +82,6 @@ document.addEventListener("DOMContentLoaded", () => {
            style="display:flex;justify-content:center;align-items:center;gap:20px;padding:0;" 
            bis_skin_checked="1">
         <img class="payment-icon google-pay" src="https://imgs.search.brave.com/aN2wDK8vh-Oydf2oPTZEeb6jAGfkwXhA45B_CEyZTYI/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9wYXku/Z29vZ2xlLmNvbS9h/Ym91dC9zdGF0aWNf/a2NzL2ltYWdlcy9s/b2dvcy9nb29nbGUt/cGF5LWxvZ28uc3Zn" alt="Google Pay" style="height:30px;width:auto;object-fit:contain;">
-        <img class="payment-icon shop pay" src="https://imgs.search.brave.com/xqViSeBl0tDO_W0IwoZxjw4baK0gqK0ubrzHmrpP_6k/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly8xMDAw/bG9nb3MubmV0L3dw/LWNvbnRlbnQvdXBs/b2Fkcy8yMDI0LzA3/L1Nob3AtUGF5LUVt/YmxlbS01MDB4Mjgx/LnBuZw" alt="shop pay logo" style="height:30px;width:auto;object-fit:contain;">
-        <img class="payment-icon klarna" src="https://cdn.klarna.com/1.0/shared/image/generic/badge/en_us/pay_now/standard/pink.svg" alt="Klarna" style="height:32px;width:auto;object-fit:contain;">
       </div>
     </div>
   </div>
