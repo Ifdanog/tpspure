@@ -75,7 +75,7 @@ const observer = new MutationObserver(() => {
 });
 
 
-observer.observe(document.body, {
+observer.observe(document.querySelector(".product"), {
   childList: true,
   subtree: true,
 });
