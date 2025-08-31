@@ -62,9 +62,9 @@ document.addEventListener("DOMContentLoaded", () => {
     <div class="security-row" 
          style="display:flex;justify-content:center;gap:15px;margin-bottom:15px;padding-bottom:15px;border-bottom:1px solid #e0e0e0;" 
          bis_skin_checked="1">
-      <img class="security-icon" src="https://cdn.shopify.com/s/files/1/0793/3417/9129/files/ssl-icon.png?v=1740544645" alt="SSL" style="height:32px;width:auto;">
-      <img class="security-icon" src="https://cdn.shopify.com/s/files/1/0851/8464/3409/files/fd4rgfg.png?v=1730930329" alt="Protected" style="height:32px;width:auto;">
-      <img class="security-icon" src="https://cdn.shopify.com/s/files/1/0851/8464/3409/files/dfdf.png?v=1730930329" alt="Secure" style="height:32px;width:auto;">
+      <img class="security-icon" src="https://cdn.shopify.com/s/files/1/0793/3417/9129/files/ssl-icon.png?v=1740544645" alt="SSL" style="height:25px;width:auto;">
+      <img class="security-icon" src="https://cdn.shopify.com/s/files/1/0851/8464/3409/files/fd4rgfg.png?v=1730930329" alt="Protected" style="height:25px;width:auto;">
+      <img class="security-icon" src="https://cdn.shopify.com/s/files/1/0851/8464/3409/files/dfdf.png?v=1730930329" alt="Secure" style="height:25px;width:auto;">
     </div>
 
     <div class="payment-rows" style="display:flex;flex-direction:column;gap:15px;" bis_skin_checked="1">
