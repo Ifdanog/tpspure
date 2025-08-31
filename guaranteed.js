@@ -106,7 +106,7 @@
 class GuaranteedSectionManager {
   constructor(options = {}) {
     this.options = {
-      targetSelector: '.product-details-module__content',
+      targetSelector: '.product-details__sidebar',
       sectionId: 'guaranteed-section',
       className: 'guaranteed-section',
       retryAttempts: 5,
@@ -151,7 +151,7 @@ class GuaranteedSectionManager {
     
     // Check for common product detail selectors
     const commonSelectors = [
-      '.product-details-module__content',
+      '.product-details__sidebar',
       '.product-details',
       '.product-info',
       '.product-content',
