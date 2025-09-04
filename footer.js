@@ -11,7 +11,7 @@ document.addEventListener("DOMContentLoaded", function () {
                     <p>TPS Fine Talc Limited, No1.Royal Exchange </p>
                     <p>London EC3V 3DG, United Kingdom</p>
                     <p><b>Company Reg No:</b> 16437539</p>
-                    <p><a href="tel:+4402080583570" style="color: blue;">+44 (0) 208 0583570</a></p>
+                    <p><a href="tel:++4402034881097" style="color: blue;">+44 (0) 203 4881097</a></p>
                     <p><a href="mailto:info@finetalc.co.uk" style="color: blue;">info@finetalc.co.uk</a></p>
                     <p style="margin-top: 10px;">Mon-Fri: 9am - 5:00pm</p>
                     <p>Sat & Sun: Closed</p>
