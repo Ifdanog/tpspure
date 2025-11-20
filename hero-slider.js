@@ -2,10 +2,8 @@
 document.addEventListener("DOMContentLoaded", () => {
 
   // 👉 CHANGE THIS to the selector of your current slider container
-  const oldSlider = document.querySelector("#tile-slider-YNp9fF") 
-                 || document.querySelector(".main-slider") 
-                 || document.querySelector("#replace-slider-here");
-
+  const oldSlider = document.querySelector("#tile-slider-YNp9fF");
+console.log(oldSlider);
   if (!oldSlider) {
     console.error("Slider target not found!");
     return;
