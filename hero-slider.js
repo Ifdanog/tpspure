@@ -21,7 +21,6 @@ newSlider.innerHTML = `
           <source media="(max-width: 768px)" srcset="https://d2gt4h1eeousrn.cloudfront.net/110609312/slider-YNp9fF/fjsROc5-2000x2000.webp" />
           <img src="https://d2gt4h1eeousrn.cloudfront.net/110609312/slider-YNp9fF/fjsROc5-2000x2000.webp" alt="A+ Grade Talcum Powder" />
         </picture>
-        <div class="overlay"></div>
         <div class="slide-content">
           <h1>A+ Grade Talcum Powder</h1>
           <p>Purchase your fine talc here, from our mine straight to you. Our Talc is milled using an Ultra-Fine Milling Technology, packaged and delivered straight to you!</p>
@@ -34,7 +33,6 @@ newSlider.innerHTML = `
           <source media="(max-width: 768px)" srcset="https://dhgf5mcbrms62.cloudfront.net/110609312/slider-YNp9fF/3kN0nV4-2000x2000.webp" />
           <img src="https://dhgf5mcbrms62.cloudfront.net/110609312/slider-YNp9fF/3kN0nV4-2000x2000.webp" alt="From Cosmetics to Pharmaceuticals" />
         </picture>
-        <div class="overlay"></div>
         <div class="slide-content">
           <h1>From Cosmetics to Pharmaceuticals</h1>
           <p>Our talc is absestos-free, ISO certified, and suitable for use in the food, cosmetic, pharmaceutical industry, and many other industries. We got you covered!</p>
@@ -47,7 +45,6 @@ newSlider.innerHTML = `
           <source media="(max-width: 768px)" srcset="https://d2gt4h1eeousrn.cloudfront.net/110609312/slider-YNp9fF/MGCsAc7-2000x2000.webp" />
           <img src="https://d2gt4h1eeousrn.cloudfront.net/110609312/slider-YNp9fF/MGCsAc7-2000x2000.webp" alt="High-quality and Safety" />
         </picture>
-        <div class="overlay"></div>
         <div class="slide-content">
           <h1>Discover how we ensure high-quality and safety</h1>
           <p>Check out and download all our certificates and resources to ensure your safety.</p>
@@ -147,7 +144,7 @@ const sliderStyles = `
   .hero-slider {
     position: relative;
     width: 100%;
-    height: 90vh;
+    height: 60vh;
     overflow: hidden;
     color: #fff;
   }
