@@ -18,7 +18,7 @@ newSlider.innerHTML = `
 
       <div class="slide active">
         <picture>
-          <source media="(max-width: 768px)" srcset="hero-slide1-mobile.jpg" />
+          <source media="(max-width: 768px)" srcset="https://cdn.jsdelivr.net/gh/ifdanog/tpspure@main/3.jpg" />
           <img src="https://cdn.jsdelivr.net/gh/ifdanog/tpspure@main/3.jpg" alt="A+ Grade Talcum Powder" />
         </picture>
         <div class="overlay"></div>
@@ -31,7 +31,7 @@ newSlider.innerHTML = `
 
       <div class="slide">
         <picture>
-          <source media="(max-width: 768px)" srcset="hero-slide2-mobile.jpg" />
+          <source media="(max-width: 768px)" srcset="https://cdn.jsdelivr.net/gh/ifdanog/tpspure@main/4.jpg" />
           <img src="https://cdn.jsdelivr.net/gh/ifdanog/tpspure@main/4.jpg" alt="From Cosmetics to Pharmaceuticals" />
         </picture>
         <div class="overlay"></div>
@@ -44,7 +44,7 @@ newSlider.innerHTML = `
 
       <div class="slide">
         <picture>
-          <source media="(max-width: 768px)" srcset="hero-slide3-mobile.jpg" />
+          <source media="(max-width: 768px)" srcset="https://cdn.jsdelivr.net/gh/ifdanog/tpspure@main/5.jpg" />
           <img src="https://cdn.jsdelivr.net/gh/ifdanog/tpspure@main/5.jpg" alt="High-quality and Safety" />
         </picture>
         <div class="overlay"></div>
@@ -150,7 +150,6 @@ const sliderStyles = `
     height: 90vh;
     overflow: hidden;
     color: #fff;
-    font-family: Arial, sans-serif;
   }
 
   .slider-wrapper {
@@ -186,7 +185,7 @@ const sliderStyles = `
   .slide-content {
     position: absolute;
     top: 50%;
-    left: 5%;
+    left: 10%;
     transform: translateY(-50%);
     max-width: 550px;
     z-index: 2;
@@ -236,7 +235,7 @@ const sliderStyles = `
   .dots {
     position: absolute;
     bottom: 20px;
-    left: 5%;
+    left: 49%;
     display: flex;
     gap: 10px;
     z-index: 3;
