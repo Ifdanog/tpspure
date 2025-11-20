@@ -69,10 +69,10 @@ oldSlider.replaceWith(newSlider);
 
 
   // --- Slider functionality ---
-  const slides = oldSlider.querySelectorAll(".slide");
-  const dotsContainer = oldSlider.querySelector(".dots");
-  const prev = oldSlider.querySelector(".prev");
-  const next = oldSlider.querySelector(".next");
+  const slides = newSlider.querySelectorAll(".slide");
+  const dotsContainer = newSlider.querySelector(".dots");
+  const prev = newSlider.querySelector(".prev");
+  const next = newSlider.querySelector(".next");
 
   let index = 0;
   let autoPlay;
@@ -124,8 +124,8 @@ oldSlider.replaceWith(newSlider);
     startAutoplay();
   }
 
-  oldSlider.addEventListener("mouseenter", stopAutoplay);
-  oldSlider.addEventListener("mouseleave", startAutoplay);
+  newSlider.addEventListener("mouseenter", stopAutoplay);
+  newSlider.addEventListener("mouseleave", startAutoplay);
 
   next.addEventListener("click", () => {
     nextSlide();
