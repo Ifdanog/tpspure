@@ -3,63 +3,70 @@ document.addEventListener("DOMContentLoaded", () => {
   // 👉 CHANGE THIS to the selector of your current slider container
   const oldSlider = document.querySelector("#tile-slider-YNp9fF");
 
-  if (!oldSlider) {
-    console.error("Slider target not found!");
-    return;
-  }
+if (!oldSlider) {
+  console.error("Slider target not found!");
+  return;
+}
 
-  // --- Inject new slider markup ---
-  oldSlider.innerHTML = `
-    <section class="hero-slider" aria-label="Hero Image Slider">
-      <div class="slider-wrapper">
+// Create a wrapper element to hold the new slider
+const newSlider = document.createElement("div");
 
-        <div class="slide active">
-          <picture>
-            <source media="(max-width: 768px)" srcset="hero-slide1-mobile.jpg" />
-            <img src="https://cdn.jsdelivr.net/gh/ifdanog/tpspure@main/3.jpg" alt="A+ Grade Talcum Powder" />
-          </picture>
-          <div class="overlay"></div>
-          <div class="slide-content">
-            <h1>New A+ Grade Talcum Powder</h1>
-            <p>Purchase your fine talc here, from our mine straight to you. Our Talc is milled using an Ultra-Fine Milling Technology, packaged and delivered straight to you!</p>
-            <a href="#" class="btn">Explore Now</a>
-          </div>
+// Put your new slider markup inside the wrapper
+newSlider.innerHTML = `
+  <section class="hero-slider" aria-label="Hero Image Slider">
+    <div class="slider-wrapper">
+
+      <div class="slide active">
+        <picture>
+          <source media="(max-width: 768px)" srcset="hero-slide1-mobile.jpg" />
+          <img src="https://cdn.jsdelivr.net/gh/ifdanog/tpspure@main/3.jpg" alt="A+ Grade Talcum Powder" />
+        </picture>
+        <div class="overlay"></div>
+        <div class="slide-content">
+          <h1>New A+ Grade Talcum Powder</h1>
+          <p>Purchase your fine talc here, from our mine straight to you. Our Talc is milled using an Ultra-Fine Milling Technology, packaged and delivered straight to you!</p>
+          <a href="#" class="btn">Explore Now</a>
         </div>
-
-        <div class="slide">
-          <picture>
-            <source media="(max-width: 768px)" srcset="hero-slide2-mobile.jpg" />
-            <img src="https://cdn.jsdelivr.net/gh/ifdanog/tpspure@main/4.jpg" alt="From Cosmetics to Pharmaceuticals" />
-          </picture>
-          <div class="overlay"></div>
-          <div class="slide-content">
-            <h1>From Cosmetics to Pharmaceuticals</h1>
-            <p>Our talc is absestos-free, ISO certified, and suitable for use in the food, cosmetic, pharmaceutical industry, and many other industries. We got you covered!</p>
-            <a href="#" class="btn">Request a sample</a>
-          </div>
-        </div>
-
-        <div class="slide">
-          <picture>
-            <source media="(max-width: 768px)" srcset="hero-slide3-mobile.jpg" />
-            <img src="https://cdn.jsdelivr.net/gh/ifdanog/tpspure@main/5.jpg" alt="High-quality and Safety" />
-          </picture>
-          <div class="overlay"></div>
-          <div class="slide-content">
-            <h1>Discover how we ensure high-quality and safety</h1>
-            <p>Check out and download all our certificates and resources to ensure your safety.</p>
-            <a href="#" class="btn">Discover Now</a>
-          </div>
-        </div>
-
       </div>
 
-      <button class="nav prev" aria-label="Previous Slide">❮</button>
-      <button class="nav next" aria-label="Next Slide">❯</button>
+      <div class="slide">
+        <picture>
+          <source media="(max-width: 768px)" srcset="hero-slide2-mobile.jpg" />
+          <img src="https://cdn.jsdelivr.net/gh/ifdanog/tpspure@main/4.jpg" alt="From Cosmetics to Pharmaceuticals" />
+        </picture>
+        <div class="overlay"></div>
+        <div class="slide-content">
+          <h1>From Cosmetics to Pharmaceuticals</h1>
+          <p>Our talc is absestos-free, ISO certified, and suitable for use in the food, cosmetic, pharmaceutical industry, and many other industries. We got you covered!</p>
+          <a href="#" class="btn">Request a sample</a>
+        </div>
+      </div>
 
-      <div class="dots"></div>
-    </section>
-  `;
+      <div class="slide">
+        <picture>
+          <source media="(max-width: 768px)" srcset="hero-slide3-mobile.jpg" />
+          <img src="https://cdn.jsdelivr.net/gh/ifdanog/tpspure@main/5.jpg" alt="High-quality and Safety" />
+        </picture>
+        <div class="overlay"></div>
+        <div class="slide-content">
+          <h1>Discover how we ensure high-quality and safety</h1>
+          <p>Check out and download all our certificates and resources to ensure your safety.</p>
+          <a href="#" class="btn">Discover Now</a>
+        </div>
+      </div>
+
+    </div>
+
+    <button class="nav prev" aria-label="Previous Slide">❮</button>
+    <button class="nav next" aria-label="Next Slide">❯</button>
+
+    <div class="dots"></div>
+  </section>
+`;
+
+// Replace the entire old slider node with the new slider
+oldSlider.replaceWith(newSlider);
+
 
   // --- Slider functionality ---
   const slides = oldSlider.querySelectorAll(".slide");
