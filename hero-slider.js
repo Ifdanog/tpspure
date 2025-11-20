@@ -18,7 +18,7 @@ newSlider.innerHTML = `
 
       <div class="slide active">
         <picture>
-          <source media="(max-width: 768px)" srcset="https://d2gt4h1eeousrn.cloudfront.net/110609312/slider-YNp9fF/fjsROc5-2000x2000.webp" />
+          <source media="(max-width: 768px)" srcset="https://dhgf5mcbrms62.cloudfront.net/110609312/slider-YNp9fF/y4zU7Is-2000x2000.webp" />
           <img src="https://d2gt4h1eeousrn.cloudfront.net/110609312/slider-YNp9fF/fjsROc5-2000x2000.webp" alt="A+ Grade Talcum Powder" />
         </picture>
         <div class="slide-content">
