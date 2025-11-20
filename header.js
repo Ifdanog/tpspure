@@ -35,8 +35,8 @@ document.addEventListener("DOMContentLoaded", function () {
                 </div>
             </li>
             <li><a href="/about-us">About Us</a></li>
-            <li><a href="/contact-us">Contact Us</a></li>
             <li><a href="/blogs">Blogs</a></li>
+            <li><a href="/contact-us">Contact Us</a></li>
         </ul>
         </nav>
 
@@ -116,8 +116,8 @@ document.addEventListener("DOMContentLoaded", function () {
                     <a href="https://cdn.jsdelivr.net/gh/ifdanog/tpspure@main/ALHABTOOR%20RES.%20TRADING%20CO.%20L.L.C%20%20-%20ISO%2022000%20-%202025%20-%202026.pdf" target="_blank">Food Grade Certificate</a>
                   </div>
                 </li>
-                <li><a href="/contact-us">Contact Us</a></li>
                 <li><a href="/blogs">Blogs</a></li>
+                <li><a href="/contact-us">Contact Us</a></li>
               </ul>
       `;
             const header = document.querySelector("header");
