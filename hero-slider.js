@@ -190,7 +190,7 @@ const sliderStyles = `
 
   @media screen and (max-width: 768px) {
   .slide-content {
-    top: 65%;
+    top: 75%;
   }
 }
 
