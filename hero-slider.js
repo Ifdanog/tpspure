@@ -1,4 +1,3 @@
-<script>
 document.addEventListener("DOMContentLoaded", () => {
 
   // 👉 CHANGE THIS to the selector of your current slider container
@@ -134,7 +133,6 @@ console.log(oldSlider);
   showSlide(0);
   startAutoplay();
 });
-</script>
 
 
 // Inject slider CSS into the page
