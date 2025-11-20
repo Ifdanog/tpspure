@@ -188,11 +188,12 @@ const sliderStyles = `
     z-index: 2;
   }
 
-  @media screen and(max-width: 768px){
+  @media screen and (max-width: 768px) {
   .slide-content {
     top: 65%;
   }
-  }
+}
+
 
   .slide-content h1 {
     font-size: 2.8rem;
