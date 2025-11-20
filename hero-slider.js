@@ -18,7 +18,7 @@ newSlider.innerHTML = `
 
       <div class="slide active">
         <picture>
-          <source media="(max-width: 768px)" srcset="https://dhgf5mcbrms62.cloudfront.net/110609312/slider-YNp9fF/y4zU7Is-2000x2000.webp" />
+          <source media="(max-width: 768px)" srcset="https://dhgf5mcbrms62.cloudfront.net/110609312/slider-YNp9fF/1xeQvUJ-2000x2000.webp" />
           <img src="https://d2gt4h1eeousrn.cloudfront.net/110609312/slider-YNp9fF/fjsROc5-2000x2000.webp" alt="A+ Grade Talcum Powder" />
         </picture>
         <div class="slide-content">
@@ -30,7 +30,7 @@ newSlider.innerHTML = `
 
       <div class="slide">
         <picture>
-          <source media="(max-width: 768px)" srcset="https://dhgf5mcbrms62.cloudfront.net/110609312/slider-YNp9fF/3kN0nV4-2000x2000.webp" />
+          <source media="(max-width: 768px)" srcset="https://dhgf5mcbrms62.cloudfront.net/110609312/slider-YNp9fF/Wytfcb9-2000x2000.webp" />
           <img src="https://dhgf5mcbrms62.cloudfront.net/110609312/slider-YNp9fF/3kN0nV4-2000x2000.webp" alt="From Cosmetics to Pharmaceuticals" />
         </picture>
         <div class="slide-content">
@@ -42,7 +42,7 @@ newSlider.innerHTML = `
 
       <div class="slide">
         <picture>
-          <source media="(max-width: 768px)" srcset="https://d2gt4h1eeousrn.cloudfront.net/110609312/slider-YNp9fF/MGCsAc7-2000x2000.webp" />
+          <source media="(max-width: 768px)" srcset="https://dhgf5mcbrms62.cloudfront.net/110609312/slider-YNp9fF/eDS729j-2000x2000.webp" />
           <img src="https://d2gt4h1eeousrn.cloudfront.net/110609312/slider-YNp9fF/MGCsAc7-2000x2000.webp" alt="High-quality and Safety" />
         </picture>
         <div class="slide-content">
