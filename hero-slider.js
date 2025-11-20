@@ -2,7 +2,7 @@
 document.addEventListener("DOMContentLoaded", () => {
 
   // 👉 CHANGE THIS to the selector of your current slider container
-  const oldSlider = document.querySelector("#hero-slider") 
+  const oldSlider = document.querySelector("#tile-slider-YNp9fF") 
                  || document.querySelector(".main-slider") 
                  || document.querySelector("#replace-slider-here");
 
