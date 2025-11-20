@@ -23,7 +23,7 @@ newSlider.innerHTML = `
         </picture>
         <div class="overlay"></div>
         <div class="slide-content">
-          <h1>New A+ Grade Talcum Powder</h1>
+          <h1>A+ Grade Talcum Powder</h1>
           <p>Purchase your fine talc here, from our mine straight to you. Our Talc is milled using an Ultra-Fine Milling Technology, packaged and delivered straight to you!</p>
           <a href="#" class="btn">Explore Now</a>
         </div>
