@@ -19,7 +19,7 @@ document.addEventListener("DOMContentLoaded", () => {
         <div class="slide active">
           <picture>
             <source media="(max-width: 768px)" srcset="hero-slide1-mobile.jpg" />
-            <img src="hero-slide1-desktop.jpg" alt="A+ Grade Talcum Powder" />
+            <img src="https://cdn.jsdelivr.net/gh/ifdanog/tpspure@main/3.jpg" alt="A+ Grade Talcum Powder" />
           </picture>
           <div class="overlay"></div>
           <div class="slide-content">
@@ -32,7 +32,7 @@ document.addEventListener("DOMContentLoaded", () => {
         <div class="slide">
           <picture>
             <source media="(max-width: 768px)" srcset="hero-slide2-mobile.jpg" />
-            <img src="hero-slide2-desktop.jpg" alt="From Cosmetics to Pharmaceuticals" />
+            <img src="https://cdn.jsdelivr.net/gh/ifdanog/tpspure@main/4.jpg" alt="From Cosmetics to Pharmaceuticals" />
           </picture>
           <div class="overlay"></div>
           <div class="slide-content">
@@ -45,7 +45,7 @@ document.addEventListener("DOMContentLoaded", () => {
         <div class="slide">
           <picture>
             <source media="(max-width: 768px)" srcset="hero-slide3-mobile.jpg" />
-            <img src="hero-slide3-desktop.jpg" alt="High-quality and Safety" />
+            <img src="https://cdn.jsdelivr.net/gh/ifdanog/tpspure@main/5.jpg" alt="High-quality and Safety" />
           </picture>
           <div class="overlay"></div>
           <div class="slide-content">
