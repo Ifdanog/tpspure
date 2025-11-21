@@ -24,7 +24,7 @@ newSlider.innerHTML = `
         <div class="slide-content">
           <h1>A+ Grade Talcum Powder</h1>
           <p>Purchase your fine talc here, from our mine straight to you. Our Talc is milled using an Ultra-Fine Milling Technology, packaged and delivered straight to you!</p>
-          <a href="#" class="btn">Explore Now</a>
+          <a href="/product" class="btn">Explore Now</a>
         </div>
       </div>
 
@@ -36,7 +36,7 @@ newSlider.innerHTML = `
         <div class="slide-content">
           <h1>From Cosmetics to Pharmaceuticals</h1>
           <p>Our talc is absestos-free, ISO certified, and suitable for use in the food, cosmetic, pharmaceutical industry, and many other industries. We got you covered!</p>
-          <a href="#" class="btn">Request a sample</a>
+          <a href="/contact-us" class="btn">Request a sample</a>
         </div>
       </div>
 
@@ -48,7 +48,7 @@ newSlider.innerHTML = `
         <div class="slide-content">
           <h1>Discover how we ensure high-quality and safety</h1>
           <p>Check out and download all our certificates and resources to ensure your safety.</p>
-          <a href="#" class="btn">Discover Now</a>
+          <a href="/downloads" class="btn">Discover Now</a>
         </div>
       </div>
 
