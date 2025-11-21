@@ -42,7 +42,7 @@ newSlider.innerHTML = `
 
       <div class="slide">
         <picture>
-          <source media="(max-width: 768px)" srcset="https://dhgf5mcbrms62.cloudfront.net/110609312/slider-YNp9fF/eDS729j-2000x2000.webp" />
+          <source media="(max-width: 768px)" srcset="https://dhgf5mcbrms62.cloudfront.net/110609312/slider-YNp9fF/DaLLdY1-2000x2000.webp" />
           <img src="https://d2gt4h1eeousrn.cloudfront.net/110609312/slider-YNp9fF/MGCsAc7-2000x2000.webp" alt="High-quality and Safety" />
         </picture>
         <div class="slide-content">
