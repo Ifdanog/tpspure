@@ -31,6 +31,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 <h3>NEED HELP?</h3>
                 <ul>
                     <li><a href="/contact-us">Contact us</a></li>
+                    <li><a href="/contact-us">Wholesale</a></li>
                     <li><a href="/contact-us">Become a Sales Partner</a></li>
                 </ul>
             </div>
