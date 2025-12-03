@@ -30,8 +30,8 @@ newSlider.innerHTML = `
 
       <div class="slide">
         <picture>
-          <source media="(max-width: 768px)" srcset="https://dhgf5mcbrms62.cloudfront.net/110609312/slider-YNp9fF/7jIKicZ-2000x2000.webp" />
-          <img src="https://dhgf5mcbrms62.cloudfront.net/110609312/slider-YNp9fF/3kN0nV4-2000x2000.webp" alt="From Cosmetics to Pharmaceuticals" />
+          <source media="(max-width: 768px)" srcset="https://dhgf5mcbrms62.cloudfront.net/110609312/slider-YNp9fF/UyE18JV-2000x2000.webp" />
+          <img src="https://dhgf5mcbrms62.cloudfront.net/110609312/slider-YNp9fF/MRqIgQv-2000x2000.webp" alt="From Cosmetics to Pharmaceuticals" />
         </picture>
         <div class="slide-content">
           <h1>From Cosmetics to Pharmaceuticals</h1>
