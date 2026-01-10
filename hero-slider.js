@@ -29,7 +29,7 @@ newSlider.innerHTML = `
       <div class="slide">
         <picture>
           <source media="(max-width: 768px)" srcset="https://raw.githubusercontent.com/Ifdanog/tpspure/refs/heads/main/mobile-fromcosmestic%202.JPEG" />
-          <img src="https://raw.githubusercontent.com/Ifdanog/tpspure/refs/heads/main/desktop-fromcosmestic%20(2).jpg" alt="From Cosmetics to Pharmaceuticals" />
+          <img src="https://raw.githubusercontent.com/Ifdanog/tpspure/refs/heads/main/desktop-fromcosmestic%20(2)%202.JPEG" alt="From Cosmetics to Pharmaceuticals" />
         </picture>
         <div class="slide-content">
           <h1>From Cosmetics to Pharmaceuticals</h1>
