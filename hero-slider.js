@@ -217,10 +217,6 @@ const sliderStyles = `
   .nav.prev { left: 15px; }
   .nav.next { right: 15px; }
 
-  .nav:hover {
-    background: rgba(255,255,255,0.6);
-  }
-
   .dots {
     position: absolute;
     bottom: 20px;
