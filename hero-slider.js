@@ -17,19 +17,19 @@ newSlider.innerHTML = `
     <div class="slider-wrapper">
 <div class="slide active">
         <picture>
-          <source media="(max-width: 768px)" srcset="https://dhgf5mcbrms62.cloudfront.net/110609312/slider-YNp9fF/FPNNljJ-2000x2000.webp" />
-          <img src="https://dhgf5mcbrms62.cloudfront.net/110609312/slider-YNp9fF/YWVc4uy-2000x2000.webp" alt="High-quality and Safety" />
+          <source media="(max-width: 768px)" srcset="https://raw.githubusercontent.com/Ifdanog/tpspure/refs/heads/main/mobile-agrade%20(1).png" />
+          <img src="https://raw.githubusercontent.com/Ifdanog/tpspure/refs/heads/main/desktop-agrade%20(1).png" alt="High-quality and Safety" />
         </picture>
         <div class="slide-content">
           <h1>A+ Grade Talcum Powder</h1>
-          <p>Purchase your fine talc here, from our mine straight to you. Our Talc is milled using an Ultra-Fine Milling Technology, packaged and delivered straight to you!</p>
+          <p>Purchase your fine talc here, from our mine straight to you. Our Talc is milled using an Ultra-Fine Milling Technology, packaged and delivered straight to you! Check out and download all our certificates and resources to ensure your safety</p>
           <a href="/product" class="btn">Explore Now</a>
         </div>
       </div>
       <div class="slide">
         <picture>
-          <source media="(max-width: 768px)" srcset="https://dhgf5mcbrms62.cloudfront.net/110609312/slider-YNp9fF/UyE18JV-2000x2000.webp" />
-          <img src="https://dhgf5mcbrms62.cloudfront.net/110609312/slider-YNp9fF/MRqIgQv-2000x2000.webp" alt="From Cosmetics to Pharmaceuticals" />
+          <source media="(max-width: 768px)" srcset="https://raw.githubusercontent.com/Ifdanog/tpspure/refs/heads/main/mobile-fromcosmestic.png" />
+          <img src="https://raw.githubusercontent.com/Ifdanog/tpspure/refs/heads/main/desktop-fromcosmestic.png" alt="From Cosmetics to Pharmaceuticals" />
         </picture>
         <div class="slide-content">
           <h1>From Cosmetics to Pharmaceuticals</h1>
