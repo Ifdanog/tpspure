@@ -214,8 +214,8 @@ const sliderStyles = `
     z-index: 3;
   }
 
-  .nav.prev { left: 15px; }
-  .nav.next { right: 15px; }
+  .nav.prev { left: 5px; }
+  .nav.next { right: 5px; }
 
   .dots {
     position: absolute;
