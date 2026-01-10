@@ -18,7 +18,7 @@ newSlider.innerHTML = `
 <div class="slide active">
         <picture>
           <source media="(max-width: 768px)" srcset="https://raw.githubusercontent.com/Ifdanog/tpspure/refs/heads/main/mobile-agrade.jpg" />
-          <img src="https://raw.githubusercontent.com/Ifdanog/tpspure/refs/heads/main/desktop-fromcosmestic%20(1).jpg" alt="High-quality and Safety" />
+          <img src="https://raw.githubusercontent.com/Ifdanog/tpspure/refs/heads/main/desktop-agrade(1)%20(1).jpg" alt="High-quality and Safety" />
         </picture>
         <div class="slide-content">
           <h1>A+ Grade Talcum Powder</h1>
