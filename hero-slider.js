@@ -17,8 +17,8 @@ newSlider.innerHTML = `
     <div class="slider-wrapper">
 <div class="slide active">
         <picture>
-          <source media="(max-width: 768px)" srcset="https://raw.githubusercontent.com/Ifdanog/tpspure/refs/heads/main/mobile-agrade%20(1).png" />
-          <img src="https://raw.githubusercontent.com/Ifdanog/tpspure/refs/heads/main/desktop-agrade%20(1).png" alt="High-quality and Safety" />
+          <source media="(max-width: 768px)" srcset="https://raw.githubusercontent.com/Ifdanog/tpspure/refs/heads/main/mobile-agrade.jpg" />
+          <img src="https://raw.githubusercontent.com/Ifdanog/tpspure/refs/heads/main/desktop-fromcosmestic%20(1).jpg" alt="High-quality and Safety" />
         </picture>
         <div class="slide-content">
           <h1>A+ Grade Talcum Powder</h1>
@@ -28,8 +28,8 @@ newSlider.innerHTML = `
       </div>
       <div class="slide">
         <picture>
-          <source media="(max-width: 768px)" srcset="https://raw.githubusercontent.com/Ifdanog/tpspure/refs/heads/main/mobile-fromcosmestic.png" />
-          <img src="https://raw.githubusercontent.com/Ifdanog/tpspure/refs/heads/main/desktop-fromcosmestic.png" alt="From Cosmetics to Pharmaceuticals" />
+          <source media="(max-width: 768px)" srcset="https://raw.githubusercontent.com/Ifdanog/tpspure/refs/heads/main/mobile-fromcosmestic.jpg" />
+          <img src="https://raw.githubusercontent.com/Ifdanog/tpspure/refs/heads/main/desktop-fromcosmestic%20(2).jpg" alt="From Cosmetics to Pharmaceuticals" />
         </picture>
         <div class="slide-content">
           <h1>From Cosmetics to Pharmaceuticals</h1>
