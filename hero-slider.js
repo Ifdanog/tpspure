@@ -144,7 +144,7 @@ const sliderStyles = `
   .hero-slider {
     position: relative;
     width: 100%;
-    height: 60vh;
+    height: 50vh;
     overflow: hidden;
     color: #fff;
   }
