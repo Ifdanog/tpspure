@@ -17,7 +17,7 @@ newSlider.innerHTML = `
     <div class="slider-wrapper">
 <div class="slide active">
         <picture>
-          <source media="(max-width: 768px)" srcset="https://raw.githubusercontent.com/Ifdanog/tpspure/refs/heads/main/mobile-agrade.jpg" />
+          <source media="(max-width: 768px)" srcset="https://raw.githubusercontent.com/Ifdanog/tpspure/refs/heads/main/mobile-agrade%202.JPEG" />
           <img src="https://raw.githubusercontent.com/Ifdanog/tpspure/refs/heads/main/desktop-agrade(1)%20(1).jpg" alt="High-quality and Safety" />
         </picture>
         <div class="slide-content">
@@ -28,7 +28,7 @@ newSlider.innerHTML = `
       </div>
       <div class="slide">
         <picture>
-          <source media="(max-width: 768px)" srcset="https://raw.githubusercontent.com/Ifdanog/tpspure/refs/heads/main/mobile-fromcosmestic.jpg" />
+          <source media="(max-width: 768px)" srcset="https://raw.githubusercontent.com/Ifdanog/tpspure/refs/heads/main/mobile-fromcosmestic%202.JPEG" />
           <img src="https://raw.githubusercontent.com/Ifdanog/tpspure/refs/heads/main/desktop-fromcosmestic%20(2).jpg" alt="From Cosmetics to Pharmaceuticals" />
         </picture>
         <div class="slide-content">
