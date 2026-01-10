@@ -34,7 +34,7 @@ newSlider.innerHTML = `
         <div class="slide-content">
           <h1>From Cosmetics to Pharmaceuticals</h1>
           <p>Our talc is absestos-free, ISO certified, and suitable for use in the food, cosmetic, pharmaceutical industry, and many other industries. We got you covered!</p>
-          <a href="/contact-us" class="btn">Request a sample</a>
+          <a href="/product" class="btn">Purchase Now</a>
         </div>
       </div>
 
