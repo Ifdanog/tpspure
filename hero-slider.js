@@ -15,11 +15,10 @@ const newSlider = document.createElement("div");
 newSlider.innerHTML = `
   <section class="hero-slider" aria-label="Hero Image Slider">
     <div class="slider-wrapper">
-
-      <div class="slide active">
+<div class="slide active">
         <picture>
-          <source media="(max-width: 768px)" srcset="https://dhgf5mcbrms62.cloudfront.net/110609312/slider-YNp9fF/D4WxlTC-2000x2000.webp" />
-          <img src="https://dhgf5mcbrms62.cloudfront.net/110609312/slider-YNp9fF/6g3YA4K-2000x2000.webp" alt="A+ Grade Talcum Powder" />
+          <source media="(max-width: 768px)" srcset="https://dhgf5mcbrms62.cloudfront.net/110609312/slider-YNp9fF/FPNNljJ-2000x2000.webp" />
+          <img src="https://dhgf5mcbrms62.cloudfront.net/110609312/slider-YNp9fF/YWVc4uy-2000x2000.webp" alt="High-quality and Safety" />
         </picture>
         <div class="slide-content">
           <h1>A+ Grade Talcum Powder</h1>
@@ -27,7 +26,6 @@ newSlider.innerHTML = `
           <a href="/product" class="btn">Explore Now</a>
         </div>
       </div>
-
       <div class="slide">
         <picture>
           <source media="(max-width: 768px)" srcset="https://dhgf5mcbrms62.cloudfront.net/110609312/slider-YNp9fF/UyE18JV-2000x2000.webp" />
@@ -37,18 +35,6 @@ newSlider.innerHTML = `
           <h1>From Cosmetics to Pharmaceuticals</h1>
           <p>Our talc is absestos-free, ISO certified, and suitable for use in the food, cosmetic, pharmaceutical industry, and many other industries. We got you covered!</p>
           <a href="/contact-us" class="btn">Request a sample</a>
-        </div>
-      </div>
-
-      <div class="slide">
-        <picture>
-          <source media="(max-width: 768px)" srcset="https://dhgf5mcbrms62.cloudfront.net/110609312/slider-YNp9fF/FPNNljJ-2000x2000.webp" />
-          <img src="https://dhgf5mcbrms62.cloudfront.net/110609312/slider-YNp9fF/YWVc4uy-2000x2000.webp" alt="High-quality and Safety" />
-        </picture>
-        <div class="slide-content">
-          <h1>Discover how we ensure high-quality and safety</h1>
-          <p>Check out and download all our certificates and resources to ensure your safety.</p>
-          <a href="/downloads" class="btn">Discover Now</a>
         </div>
       </div>
 
