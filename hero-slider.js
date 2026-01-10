@@ -94,34 +94,34 @@ oldSlider.replaceWith(newSlider);
     restartAutoplay();
   }
 
-  function startAutoplay() {
-    autoPlay = setInterval(nextSlide, 5000);
-  }
+  // function startAutoplay() {
+  //   autoPlay = setInterval(nextSlide, 5000);
+  // }
 
-  function stopAutoplay() {
-    clearInterval(autoPlay);
-  }
+  // function stopAutoplay() {
+  //   clearInterval(autoPlay);
+  // }
 
-  function restartAutoplay() {
-    stopAutoplay();
-    startAutoplay();
-  }
+  // function restartAutoplay() {
+  //   stopAutoplay();
+  //   startAutoplay();
+  // }
 
-  newSlider.addEventListener("mouseenter", stopAutoplay);
-  newSlider.addEventListener("mouseleave", startAutoplay);
+  // newSlider.addEventListener("mouseenter", stopAutoplay);
+  // newSlider.addEventListener("mouseleave", startAutoplay);
 
   next.addEventListener("click", () => {
     nextSlide();
-    restartAutoplay();
+    // restartAutoplay();
   });
 
   prev.addEventListener("click", () => {
     prevSlide();
-    restartAutoplay();
+    // restartAutoplay();
   });
 
   showSlide(0);
-  startAutoplay();
+  // startAutoplay();
 });
 
 
