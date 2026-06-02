@@ -298,14 +298,16 @@ document.addEventListener("DOMContentLoaded", function () {
             animation: fadeIn 0.3s ease-in-out;
         }
 
+#tile-text-eeH4qf > div {text-align: center;}
+
         .custom-talc-btn {
     display: inline-block;
     margin-top: 20px;
     padding: 12px 24px;
-    background: #000;
+    background: #004aad;
     color: #fff;
     text-decoration: none;
-    border-radius: 4px;
+    border-radius: 5px;
     font-weight: 600;
 }
 
