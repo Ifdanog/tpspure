@@ -325,3 +325,15 @@ document.addEventListener("DOMContentLoaded", function () {
     `;
         document.head.appendChild(style);
       });
+document.addEventListener("DOMContentLoaded", function () {
+    const description = document.querySelector("#tile-text-eeH4qf .ins-tile__description");
+
+    if (description) {
+        const button = document.createElement("a");
+        button.href = "/contact-us"; // Change to your desired URL
+        button.textContent = "Get a Quote";
+        button.className = "custom-talc-btn";
+
+        description.insertAdjacentElement("afterend", button);
+    }
+});
