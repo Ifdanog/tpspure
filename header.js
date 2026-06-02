@@ -340,22 +340,33 @@ document.addEventListener("DOMContentLoaded", function () {
     `;
         document.head.appendChild(style);
       });
-document.addEventListener("DOMContentLoaded", function () {
-    const description = document.querySelector("#tile-text-eeH4qf .ins-tile__description");
+function addTradeButton() {
+    const description = document.querySelector(
+        "#tile-text-eeH4qf .ins-tile__description"
+    );
 
-    if (description) {
-        const button = document.createElement("a");
+    if (!description) return;
 
-        button.href = "/trade-account";
-        button.textContent = "Apply for Trade Account";
+    // Prevent duplicates
+    if (description.parentNode.querySelector(".custom-talc-btn")) return;
 
-        button.style.display = "inline-block";
-        button.style.padding = "15px 30px";
-        button.style.background = "#000";
-        button.style.color = "#fff";
-        button.style.marginTop = "20px";
-        button.style.textDecoration = "none";
+    const button = document.createElement("a");
+    button.href = "/trade-account";
+    button.textContent = "Apply for Trade Account";
+    button.className = "custom-talc-btn";
 
-        description.insertAdjacentElement("afterend", button);
-    }
+    description.insertAdjacentElement("afterend", button);
+}
+
+// Initial attempt
+addTradeButton();
+
+// Watch for the widget rebuilding itself
+const observer = new MutationObserver(() => {
+    addTradeButton();
+});
+
+observer.observe(document.body, {
+    childList: true,
+    subtree: true
 });
