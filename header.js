@@ -312,7 +312,8 @@ document.addEventListener("DOMContentLoaded", function () {
 }
 
 .custom-talc-btn:hover {
-    opacity: 0.9;
+    opacity: 0.8;
+    color: #fff;
 }
 
         @keyframes fadeIn {
