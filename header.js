@@ -341,14 +341,20 @@ document.addEventListener("DOMContentLoaded", function () {
         document.head.appendChild(style);
       });
 document.addEventListener("DOMContentLoaded", function () {
-        console.log("hiiiii from new button");
     const description = document.querySelector("#tile-text-eeH4qf .ins-tile__description");
-console.log(description);
+
     if (description) {
         const button = document.createElement("a");
-        button.href = "/trade-account"; // Change to your desired URL
+
+        button.href = "/trade-account";
         button.textContent = "Apply for Trade Account";
-        button.className = "custom-talc-btn";
+
+        button.style.display = "inline-block";
+        button.style.padding = "15px 30px";
+        button.style.background = "#000";
+        button.style.color = "#fff";
+        button.style.marginTop = "20px";
+        button.style.textDecoration = "none";
 
         description.insertAdjacentElement("afterend", button);
     }
