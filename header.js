@@ -298,6 +298,21 @@ document.addEventListener("DOMContentLoaded", function () {
             animation: fadeIn 0.3s ease-in-out;
         }
 
+        .custom-talc-btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 24px;
+    background: #000;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 4px;
+    font-weight: 600;
+}
+
+.custom-talc-btn:hover {
+    opacity: 0.9;
+}
+
         @keyframes fadeIn {
             from {
                 opacity: 0;
@@ -326,12 +341,13 @@ document.addEventListener("DOMContentLoaded", function () {
         document.head.appendChild(style);
       });
 document.addEventListener("DOMContentLoaded", function () {
+        console.log("hiiiii from new button");
     const description = document.querySelector("#tile-text-eeH4qf .ins-tile__description");
-
+console.log(description);
     if (description) {
         const button = document.createElement("a");
-        button.href = "/contact-us"; // Change to your desired URL
-        button.textContent = "Get a Quote";
+        button.href = "/trade-account"; // Change to your desired URL
+        button.textContent = "Apply for Trade Account";
         button.className = "custom-talc-btn";
 
         description.insertAdjacentElement("afterend", button);
